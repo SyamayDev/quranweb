@@ -296,28 +296,34 @@ body {
     }
     .card-header .d-flex {
         position: relative;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        flex-wrap: nowrap; /* Mencegah elemen membungkus ke baris baru */
+        justify-content: space-between; /* Tombol kiri dan kanan terpisah */
+        align-items: center; /* Menyelaraskan vertikal di tengah */
     }
     .header-content {
-        width: 100%;
+        width: auto; /* Mengizinkan lebar menyesuaikan konten */
         justify-content: center;
-        margin-top: 30px;
+        margin-top: 0; /* Menghapus jarak atas */
+        flex-grow: 1; /* Membiarkan konten tengah mengisi ruang */
         flex-direction: row;
         align-items: center;
     }
     .event-list-btn {
-        margin-top: 30px;
+        margin-top: 0; /* Menghapus jarak atas */
+        margin-right: 5px; /* Jarak kecil ke kanan */
+    }
+    #refreshBtn {
+        margin-left: auto; /* Mendorong tombol ke kanan */
+        margin-right: 5px; /* Jarak kecil dari tepi kanan */
     }
     .select-container-wrapper {
         display: flex;
         flex-wrap: nowrap;
-        width: 100%;
         justify-content: center;
     }
     .select-container {
         width: 45%;
-        margin: 2px 2px;
+        margin: 2px;
     }
     .calendar-table th, .calendar-table td {
         padding: 6px;
@@ -326,10 +332,6 @@ body {
     .hijri-date {
         font-size: 0.4rem;
         margin-top: 2px;
-    }
-    .calendar-table td:hover {
-        transform: none;
-        box-shadow: none;
     }
 }
 
