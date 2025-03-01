@@ -1,0 +1,414 @@
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    --color-primary: #556fff;
+    --color-secondary: #0e132d;
+    --color-snow: #cbcdd8;
+    --color-red: #ff4040;
+    --color-orange: #ff702c;
+    --color-blue: #4a8cfd;
+    --color-yellow: #fa9905;
+    --color-green: #41bd83;
+    --color-text: #9498ac;
+    --color-comment: #5d6072;
+    --bg-black: #000;
+    --bg-white: #fff;
+    --bg-primary: #556fff;
+    --bg-secondary: #0e132d;
+    --bg-snow: #f7f7f8;
+    --bg-red: #ff4040;
+    --bg-orange: #ff702c;
+    --bg-blue: #53a7f9;
+    --bg-yellow: #fa9905;
+    --bg-green: #41bd83;
+    --border-black: #000;
+    --border-white: #fff;
+    --border-primary: #556fff;
+    --border-secondary: #0e132d;
+    --border-snow: #efeff6;
+    --border-red: #ff4040;
+    --border-orange: #ff702c;
+    --border-blue: #4a8cfd;
+    --border-yellow: #fa9905;
+    --border-green: #41bd83;
+    --border-input: #efeff6;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--bg-white);
+    min-height: 100vh;
+    font-family: "CircularStd", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-secondary);
+    transition: 0.2s all;
+}
+
+body.darkMode-active {
+    --color-black: #fff;
+    --color-white: #fff;
+    --color-primary: #556fff;
+    --color-secondary: #cbcdd8;
+    --color-snow: #52566e;
+    --color-red: #ff4040;
+    --color-orange: #ff702c;
+    --color-blue: #4a8cfd;
+    --color-yellow: #fa9905;
+    --color-green: #41bd83;
+    --color-text: #ececec;
+    --color-comment: #5d6072;
+    --bg-black: #fff;
+    --bg-white: #0e132d;
+    --bg-primary: #556fff;
+    --bg-secondary: #9498ac;
+    --bg-snow: #0a0f27;
+    --bg-red: #ff4040;
+    --bg-orange: #ff702c;
+    --bg-blue: #53a7f9;
+    --bg-yellow: #fa9905;
+    --bg-green: #41bd83;
+    --border-black: #000;
+    --border-white: #0e132d;
+    --border-primary: #556fff;
+    --border-secondary: #0e132d;
+    --border-snow: #242a48;
+    --border-red: #ff4040;
+    --border-orange: #ff702c;
+    --border-blue: #4a8cfd;
+    --border-yellow: #fa9905;
+    --border-green: #41bd83;
+    --border-input: #303756;
+}
+
+/* Quran Section Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, var(--bg-snow), var(--bg-white));
+    color: var(--color-secondary);
+    transition: background 0.5s ease, color 0.3s ease;
+    animation: gradientBG 15s ease infinite;
+}
+@keyframes gradientBG {
+    0% { background: linear-gradient(45deg, var(--bg-snow), var(--bg-white)); }
+    25% { background: linear-gradient(45deg, var(--bg-white), var(--bg-snow)); }
+    50% { background: linear-gradient(45deg, var(--bg-snow), var(--bg-white)); }
+    75% { background: linear-gradient(45deg, var(--bg-white), var(--bg-snow)); }
+    100% { background: linear-gradient(45deg, var(--bg-snow), var(--bg-white)); }
+}
+
+/* Spinner */
+.spinner {
+    width: 80px;
+    height: 80px;
+    border: 10px solid var(--border-snow);
+    border-top: 10px solid var(--color-green);
+    border-radius: 50%;
+    animation: spin 1s linear infinite, pulseSpinner 1.5s ease infinite;
+    margin: 20px auto;
+    display: block;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes pulseSpinner {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Card & Modal */
+.card, .modal-content {
+    border-radius: 15px;
+    background: var(--bg-white);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.card:hover, .modal-content:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+.card-header, .modal-header {
+    border-radius: 15px 15px 0 0;
+    background: linear-gradient(45deg, var(--bg-green), var(--bg-blue));
+    color: var(--color-white);
+}
+
+/* Surah List */
+.surah-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.surah-card {
+    background: linear-gradient(135deg, var(--bg-snow), var(--bg-white));
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+.surah-card:hover {
+    background: linear-gradient(135deg, var(--bg-white), var(--bg-snow));
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+.surah-card .arabic-name {
+    font-family: 'Lateef', serif;
+    direction: rtl;
+    text-align: right;
+    font-size: 1.8rem;
+    color: var(--color-green);
+    transition: color 0.3s ease;
+}
+.surah-card:hover .arabic-name {
+    color: var(--color-blue);
+}
+.surah-card .latin-name { font-size: 1.1rem; color: var(--color-secondary); }
+.surah-card .translation { font-size: 0.95rem; color: var(--color-text); }
+.surah-card .verses { font-size: 0.95rem; color: var(--color-green); }
+.surah-card .favorite-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.surah-card .favorite-btn:hover {
+    transform: scale(1.2);
+    color: var(--color-yellow);
+}
+
+/* Search Container */
+.search-container {
+    position: relative;
+    margin-bottom: 25px;
+    animation: searchFadeIn 1s ease;
+}
+@keyframes searchFadeIn {
+    0% { opacity: 0; transform: translateX(-20px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+#surahSearch {
+    width: 100%;
+    padding: 12px 40px 12px 15px;
+    border: 2px solid var(--border-green);
+    border-radius: 25px;
+    font-size: 1rem;
+    background: var(--bg-white);
+    color: var(--color-secondary);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+#surahSearch:focus {
+    border-color: var(--border-blue);
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+    transform: scale(1.02);
+    outline: none;
+}
+.voice-search-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--bg-green);
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: var(--color-white);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.voice-search-btn:hover {
+    background: var(--bg-blue);
+    transform: translateY(-50%) rotate(360deg);
+}
+
+/* Voice Popup */
+.voice-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--bg-white);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    z-index: 2000;
+    text-align: center;
+    pointer-events: none;
+}
+.voice-popup p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--color-green);
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+    align-items: center;
+}
+.pagination button {
+    padding: 10px 15px;
+    border: 2px solid var(--border-green);
+    border-radius: 25px;
+    background: var(--bg-white);
+    color: var(--color-green);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.pagination button:hover {
+    background: var(--bg-green);
+    color: var(--color-white);
+    transform: scale(1.1);
+}
+.pagination button:disabled {
+    background: var(--bg-snow);
+    border-color: var(--border-snow);
+    color: var(--color-text);
+    cursor: not-allowed;
+    transform: none;
+}
+.pagination .page-number {
+    padding: 8px 16px;
+    border: 2px solid var(--border-green);
+    border-radius: 25px;
+    background: var(--bg-white);
+    color: var(--color-green);
+    font-weight: 500;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+.pagination .page-number:hover {
+    background: var(--bg-green);
+    color: var(--color-white);
+}
+
+/* Audio Player */
+.audio-player {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, var(--bg-snow), var(--bg-white));
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease;
+    animation: audioFadeIn 0.8s ease;
+}
+@keyframes audioFadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+.audio-player:hover {
+    background: linear-gradient(135deg, var(--bg-green), var(--bg-blue));
+    color: var(--color-white);
+    transform: scale(1.05);
+}
+.audio-player button {
+    background: transparent;
+    border: none;
+    font-size: 1rem;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.audio-player button:hover {
+    color: var(--color-white);
+    transform: scale(1.2);
+}
+.audio-player input[type=range] {
+    flex: 1;
+    margin: 0 10px;
+    accent-color: var(--color-green);
+}
+
+/* Share Options */
+.share-options {
+    margin-top: 10px;
+    display: none;
+}
+.share-options p {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--color-green);
+}
+.share-options a {
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 8px 12px;
+    background: var(--bg-blue);
+    color: var(--color-white);
+    border-radius: 6px;
+    display: inline-block;
+}
+.share-options a:hover {
+    background: var(--bg-primary);
+}
+
+/* Dark Mode Adjustments */
+body.darkMode-active {
+    background: linear-gradient(45deg, var(--bg-snow), var(--bg-white));
+}
+body.darkMode-active .card,
+body.darkMode-active .modal-content {
+    background: var(--bg-white);
+    color: var(--color-secondary);
+}
+body.darkMode-active .card-header,
+body.darkMode-active .modal-header {
+    background: linear-gradient(45deg, var(--bg-green), var(--bg-blue));
+}
+body.darkMode-active .surah-card {
+    background: linear-gradient(135deg, var(--bg-snow), var(--bg-white));
+}
+body.darkMode-active .surah-card:hover {
+    background: linear-gradient(135deg, var(--bg-white), var(--bg-snow));
+}
+body.darkMode-active .surah-card .arabic-name { color: var(--color-green); }
+body.darkMode-active .surah-card .latin-name { color: var(--color-secondary); }
+body.darkMode-active .surah-card .translation,
+body.darkMode-active .surah-card .verses { color: var(--color-text); }
+body.darkMode-active .surah-card .favorite-btn { color: var(--color-white); }
+body.darkMode-active .surah-card .favorite-btn:hover { color: var(--color-yellow); }
+body.darkMode-active #surahSearch {
+    background: var(--bg-snow);
+    border-color: var(--border-snow);
+    color: var(--color-secondary);
+}
+body.darkMode-active .voice-search-btn { background: var(--bg-green); }
+body.darkMode-active .voice-search-btn:hover { background: var(--bg-blue); }
+body.darkMode-active .pagination button { background: var(--bg-snow); border-color: var(--border-snow); color: var(--color-secondary); }
+body.darkMode-active .pagination button:hover { background: var(--bg-green); color: var(--color-white); }
+body.darkMode-active .pagination .page-number { background: var(--bg-snow); border-color: var(--border-snow); color: var(--color-secondary); }
+body.darkMode-active .pagination .page-number:hover { background: var(--bg-green); color: var(--color-white); }
+body.darkMode-active .audio-player { background: linear-gradient(135deg, var(--bg-snow), var(--bg-white)); }
+body.darkMode-active .audio-player:hover { background: linear-gradient(135deg, var(--bg-green), var(--bg-blue)); }
+body.darkMode-active .voice-popup { background: var(--bg-white); color: var(--color-green); }
+body.darkMode-active .share-options a { background: var(--bg-blue); }
+body.darkMode-active .share-options a:hover { background: var(--bg-primary); }
+
+/* Responsive */
+@media (max-width: 767px) {
+    .surah-list { grid-template-columns: repeat(2, 1fr); gap: 15px; }
+    .surah-card .arabic-name { font-size: 1.5rem; }
+    .voice-popup { width: 90%; }
+}
+
+/* Modal Backdrop Fix */
+.modal-backdrop { display: none !important; }
+
+.em_main_footer.with__text.just_color.p-0 {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
