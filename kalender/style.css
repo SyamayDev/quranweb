@@ -299,7 +299,7 @@ body {
         flex-wrap: nowrap; /* Mencegah elemen membungkus ke baris baru */
         justify-content: space-between; /* Tombol kiri dan kanan terpisah */
         align-items: center; /* Menyelaraskan vertikal di tengah */
-        padding: 7px 5px 2px 5px;
+        padding: 10px 5px 2px 5px;
     }
     .header-content {
         width: auto; /* Mengizinkan lebar menyesuaikan konten */
