@@ -1,29 +1,16 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="Description" content="Hadits Online Dengan Terjemahan Bahasa Indonesia (api.hadith.gading.dev)">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="Description" content="Digital Doa Online dengan Terjemahan Bahasa Indonesia (API MyQuran)">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../img/favicon2 (2).png" sizes="32x32">
-    <link rel="apple-touch-icon" href="../img/favicon2 (2).png">
-
-    <!-- Bootstrap CSS -->
+    <!-- CSS Libraries -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-    <!-- Select2 CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
-    <!-- Google Font untuk teks Arab (Lateef) -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lateef&display=swap">
-    <!-- Animate.css untuk animasi -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <!-- Muslim Web CSS -->
@@ -35,20 +22,20 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <title>Hadist Digital</title>
+    <title>Doa Digital</title>
 </head>
 <body>
     <div id="wrapper">
         <div id="content">
-            <!-- Header -->
+            <!-- Header dari Hadist Digital -->
             <header class="main_haeder multi_item">
                 <div class="em_side_right">
-                    <a class="btn btn__back rounded-circle bg-snow" href="../index.html">
+                    <a class="btn btn__back rounded-circle bg-snow" href="../../quranweb/">
                         <i class="tio-chevron_left"></i>
                     </a>
                 </div>
                 <div class="title_page">
-                    <span class="page_name">Hadist Digital</span>
+                    <span class="page_name">Doa Digital</span>
                 </div>
                 <div class="em_side_right">
                     <button type="button" class="btn btn_menuSidebar item-show" data-toggle="modal" data-target="#mdllSidebarMenu-background">
@@ -63,31 +50,32 @@
                     <div class="col-lg-12">
                         <div class="card my-5 border-0 shadow animate__animated animate__zoomIn">
                             <div class="card-header my-card-header d-flex justify-content-between align-items-center">
-                                <span class="animate__animated animate__fadeInLeft">Daftar Kitab Hadits</span>
+                                <span class="animate__animated animate__fadeInLeft">Daftar Doa</span>
                                 <div>
                                     <button class="btn btn-outline-light btn-sm animate__animated animate__rotateIn mr-2" @click="refreshPage">
                                         <i class="fas fa-sync-alt"></i>
                                     </button>
-                                    <button class="btn btn-outline-light btn-sm" @click="showSavedHadithsModal" :title="'Hadits Tersimpan (' + savedHadiths.length + ')'">
+                                    <button class="btn btn-outline-light btn-sm" @click="showSavedDoasModal" :title="'Doa Tersimpan (' + savedDoas.length + ')'">
                                         <i class="fas fa-save"></i>
                                     </button>
                                 </div>
                             </div>
                             <div class="card-body">
                                 <div class="search-container">
-                                    <input type="text" id="bookSearch" v-model="searchQuery" placeholder="Cari kitab..." @input="filterBooks">
+                                    <input type="text" id="doaSearch" v-model="searchQuery" placeholder="Cari doa" @input="filterDoas">
                                     <button class="voice-search-btn" @click="startVoiceSearch"><i class="fas fa-microphone"></i></button>
                                 </div>
                                 <div v-if="loading" class="d-flex justify-content-center">
                                     <div class="spinner"></div>
                                 </div>
-                                <div v-else-if="paginatedBooks.length === 0" class="text-center">
-                                    <p>Tidak ada kitab yang ditemukan。</p>
+                                <div v-else-if="paginatedDoas.length === 0" class="text-center">
+                                    <p>Tidak ada doa yang ditemukan。</p>
                                 </div>
-                                <div v-else class="book-list">
-                                    <div v-for="book in paginatedBooks" :key="book.id" class="book-card" @click="openDetailModal(book.id)">
-                                        <div class="book-name">{{ book.name }}</div>
-                                        <div class="book-info">{{ book.numberOfHadith }} Hadits</div>
+                                <div v-else class="doa-list">
+                                    <div v-for="doa in paginatedDoas" :key="doa.id" class="doa-card" @click="openDetailModal(doa.id)">
+                                        <div class="arabic-name">{{ doa.arab.substr(0, 30) + (doa.arab.length > 30 ? '...' : '') }}</div>
+                                        <div class="title">{{ doa.judul }}</div>
+                                        <div class="source">{{ doa.source }}</div>
                                     </div>
                                 </div>
                                 <div class="pagination" v-if="totalPages > 1">
@@ -98,89 +86,79 @@
                             </div>
                         </div>
 
-                        <!-- Modal Detail Kitab -->
+                        <!-- Modal Detail Doa -->
                         <div class="modal fade" id="detailModal" tabindex="-1">
                             <div class="modal-dialog modal-xl">
                                 <div class="modal-content my-modal-content animate__animated animate__zoomIn">
                                     <div class="modal-header my-modal-header">
-                                        <h5 class="modal-title">{{ selectedBook.name }}</h5>
+                                        <h5 style="font-size: 2rem;" class="animate__animated animate__fadeInDown">{{ detail.judul || 'Data Tidak Ditemukan' }}</h5>
                                         <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
                                     </div>
                                     <div class="modal-body">
                                         <div v-if="loading2" class="d-flex justify-content-center">
                                             <div class="spinner"></div>
                                         </div>
-                                        <div v-else-if="hadiths.length === 0" class="text-center">
-                                            <p>Tidak ada hadits yang tersedia untuk kitab ini。</p>
-                                        </div>
                                         <div v-else>
-                                            <div class="mb-3">
-                                                <select id="hadithSelect" style="width: 100%;"></select>
-                                            </div>
-                                            <div class="border border-success p-3" style="max-height: 450px; overflow-y: scroll; border-radius: 8px;">
-                                                <div v-for="(hadith, idx) in hadiths" :key="hadith.number" :id="'hadith-' + hadith.number" class="animate__animated animate__fadeInUp">
-                                                    <p><span class="badge badge-pill badge-success">Hadits {{ hadith.number }}</span></p>
-                                                    <p class="arabic-text">{{ hadith.arab }}</p>
-                                                    <p><small class="font-italic">{{ hadith.id }}</small></p>
+                                            <div class="row p-2">
+                                                <div class="col-lg-12 animate__animated animate__fadeInUp">
+                                                    <p class="arabic-name" style="font-size: 1.8rem; text-align: right;" v-if="detail.arab">{{ detail.arab }}</p>
+                                                    <p v-else class="text-center text-muted">Teks Arab Tidak Tersedia</p>
+                                                    <p class="latin-text" v-if="detail.latin">{{ detail.latin }}</p>
+                                                    <p v-else class="text-center text-muted"><small>(Latin tidak tersedia)</small></p>
+                                                    <p v-if="detail.indo"><small class="font-italic">{{ detail.indo }}</small></p>
+                                                    <p v-else class="text-center text-muted">Terjemahan Tidak Tersedia</p>
                                                     <div class="mt-2">
-                                                        <button class="btn btn-sm btn-outline-secondary animate__animated animate__pulse animate__infinite" @click="copyHadith(hadith)">
-                                                            <i v-if="copiedHadiths[hadith.number]" class="fas fa-check copied-check"></i>
-                                                            <i v-else class="fas fa-copy"></i> Salin
+                                                        <button class="btn btn-sm btn-outline-secondary animate__animated animate__pulse animate__infinite" @click="copyDoa" :disabled="!detail.arab">
+                                                            <i v-if="copied" class="fas fa-check copied-check"></i>
+                                                            <i v-else class="fas fa-copy"></i> Copy
                                                         </button>
-                                                        <button class="btn btn-sm btn-outline-primary ml-2" @click="toggleSaveHadith(hadith)">
-                                                            <i v-if="isHadithSaved(hadith)" class="fas fa-save"></i>
-                                                            <i v-else class="far fa-save"></i> {{ isHadithSaved(hadith) ? 'Hapus' : 'Simpan' }}
+                                                        <button class="btn btn-sm btn-outline-primary ml-2" @click="toggleSaveDoa(detail)" :disabled="!detail.arab">
+                                                            <i v-if="isDoaSaved(detail)" class="fas fa-save"></i>
+                                                            <i v-else class="far fa-save"></i> {{ isDoaSaved(detail) ? 'Hapus' : 'Simpan' }}
                                                         </button>
-                                                        <button class="btn btn-sm btn-success ml-2" @click="shareHadith(hadith)">Bagikan</button>
-                                                        <div class="share-options" v-if="showShareOptions[hadith.number]">
+                                                        <button class="btn btn-sm btn-success ml-2" @click="shareDoa" :disabled="!detail.arab">Bagikan</button>
+                                                        <div class="share-options" v-if="showShareOptions">
                                                             <p>Bagikan melalui:</p>
-                                                            <a :href="`https://api.whatsapp.com/send?text=${encodeURIComponent(shareText[hadith.number])}`" target="_blank">WhatsApp</a>
-                                                            <a :href="`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://hadith-digital.example.com')}&quote=${encodeURIComponent(shareText[hadith.number])}`" target="_blank">Facebook</a>
+                                                            <a :href="`https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}`" target="_blank">WhatsApp</a>
+                                                            <a :href="`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://example.com')}&quote=${encodeURIComponent(shareText)}`" target="_blank">Facebook</a>
                                                             <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-                                                            <a href="#" @click.prevent="copyShareText(hadith.number)">Salin Teks</a>
+                                                            <a href="#" @click.prevent="copyShareText">Salin Teks</a>
                                                         </div>
                                                     </div>
                                                     <hr>
+                                                    <p class="source"><strong>Sumber:</strong> {{ detail.source || 'Sumber Tidak Tersedia' }}</p>
                                                 </div>
-                                            </div>
-                                            <div class="pagination" v-if="totalHadithPages > 1">
-                                                <button :disabled="currentHadithPage === 1" @click="previousHadithPage" class="animate__animated animate__fadeInLeft">Previous</button>
-                                                <div class="page-number" @click="togglePageSelect">
-                                                    {{ currentHadithPage }} / {{ totalHadithPages }}
-                                                    <select v-if="showPageSelect" v-model="currentHadithPage" @change="jumpToHadithPage" @blur="showPageSelect = false" style="position: absolute; opacity: 0; width: 100%;">
-                                                        <option v-for="page in totalHadithPages" :key="page" :value="page">{{ page }}</option>
-                                                    </select>
-                                                </div>
-                                                <button :disabled="currentHadithPage === totalHadithPages" @click="nextHadithPage" class="animate__animated animate__fadeInRight">Next</button>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                                        <button class="btn btn-success animate__animated animate__fadeInLeft" @click="prevDoa" :disabled="!hasPrev"><i class="fas fa-arrow-left"></i></button>
+                                        <button class="btn btn-success animate__animated animate__fadeInRight" @click="nextDoa" :disabled="!hasNext"><i class="fas fa-arrow-right"></i></button>
+                                        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Modal Hadits Tersimpan -->
-                        <div class="modal fade" id="savedHadithsModal" tabindex="-1">
+                        <!-- Modal Doa Tersimpan -->
+                        <div class="modal fade" id="savedDoasModal" tabindex="-1">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content my-modal-content animate__animated animate__zoomIn">
                                     <div class="modal-header my-modal-header">
-                                        <h5 class="modal-title">Hadits Tersimpan</h5>
+                                        <h5 class="modal-title">Doa Tersimpan</h5>
                                         <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
                                     </div>
                                     <div class="modal-body">
-                                        <div v-if="savedHadiths.length === 0" class="text-center">
-                                            <p>Belum ada hadits yang disimpan.</p>
+                                        <div v-if="savedDoas.length === 0" class="text-center">
+                                            <p>Belum ada doa yang disimpan。</p>
                                         </div>
                                         <div v-else>
-                                            <div v-for="hadith in savedHadiths" :key="hadith.number" class="mb-3">
-                                                <p><span class="badge badge-pill badge-success">Hadits {{ hadith.number }} ({{ hadith.bookName }})</span></p>
-                                                <p class="arabic-text">{{ hadith.arab }}</p>
-                                                <p><small class="font-italic">{{ hadith.id }}</small></p>
-                                                <button class="btn btn-sm btn-primary" @click="goToSavedHadith(hadith)">Lihat</button>
-                                                <button class="btn btn-sm btn-danger ml-2" @click="toggleSaveHadith(hadith)">Hapus</button>
+                                            <div v-for="doa in savedDoas" :key="doa.id" class="mb-3">
+                                                <p><span class="badge badge-pill badge-success">{{ doa.judul }}</span></p>
+                                                <p class="arabic-name" style="font-family: 'Lateef', serif;">{{ doa.arab }}</p>
+                                                <p><small class="font-italic">{{ doa.indo }}</small></p>
+                                                <button class="btn btn-sm btn-primary" @click="goToSavedDoa(doa)">Lihat</button>
+                                                <button class="btn btn-sm btn-danger ml-2" @click="toggleSaveDoa(doa)">Hapus</button>
                                             </div>
                                         </div>
                                     </div>
@@ -200,11 +178,11 @@
             </main>
         </div>
 
-                <!-- Start em_main_footer -->
+                      <!-- Start em_main_footer -->
 <footer class="em_main_footer with__text just_color p-0">
     <div class="em_body_navigation -active-links -active_primary position-relative">
         <div class="item_link">
-            <a href="../kalender/index.html" class="btn btn_navLink">
+            <a href="../kalender/" class="btn btn_navLink">
                 <div class="icon_current">
                     <svg id="Iconly_Two-tone_Calendar" data-name="Iconly/Two-tone/Calendar"
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -250,21 +228,21 @@
                                 transform="translate(11.934 0)" fill="#200e32" />
                         </g>
                     </svg>
-
+  
                 </div>
                 <div class="txt__tile">Calender</div>
             </a>
         </div>
         <div class="item_link">
-            <a href="../jadwalsholatdanimsakiah/index.html" class="btn btn_navLink">
-                <div class="icon_current">
+            <a href="../jadwalsholatdanimsakiah/" class="btn btn_navLink">
+                <div class="">
                     <i class="fas fa-clock"></i>
                 </div>
                 <div class="txt__tile">Sholat</div>
             </a>
         </div>
         <div class="item_link">
-            <a href="../index.html" class="btn btn_navLink">
+            <a href="../../quranweb/" class="btn btn_navLink">
                 <button type="button" class="btn btnCircle_default _lg">
                     <svg id="Iconly_Curved_Home" data-name="Iconly/Curved/Home" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                         <g id="Home" transform="translate(2 1.667)">
@@ -305,7 +283,7 @@
             </a>
         </div>
         <div class="item_link">
-            <a href="../setting/index.html" class="btn btn_navLink">
+            <a href="../setting/" class="btn btn_navLink">
                 <div class="icon_current">
                     <svg id="Iconly_Two-tone_Setting" data-name="Iconly/Two-tone/Setting"
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -334,16 +312,16 @@
                                 fill="#200e32" opacity="0.4" />
                         </g>
                     </svg>
-
+  
                 </div>
                 <div class="txt__tile">Settings</div>
             </a>
         </div>
     </div>
-</footer>
-<!-- End. em_main_footer -->
+  </footer>
+  <!-- End. em_main_footer -->
 
-        <!-- Modal Sidebar Menu (withBackground) -->
+        <!-- Modal Sidebar Menu dari Hadist Digital -->
         <div class="modal sidebarMenu -left fade" id="mdllSidebarMenu-background" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
                 <div class="modal-content">
@@ -370,7 +348,7 @@
                     <div class="modal-body">
                         <ul class="nav flex-column -active-links">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">
+                                <a class="nav-link" href="../../quranweb/">
                                     <div class="">
                                         <div class="icon_current">
                                             <svg id="Iconly_Curved_Discovery" data-name="Iconly/Curved/Discovery" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
@@ -507,10 +485,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue-resource@1.5.1"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-    <script src="../assets/js/main.js" defer></script>
-    <script src="../assets/js/pwa-services.js"></script>
 
     <script src="script.js"></script>
 </body>

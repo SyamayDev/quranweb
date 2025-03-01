@@ -347,7 +347,7 @@
             <!-- Simple Footer -->
             <section class="emSimple_main_footer margin-t-10 border-t border-t-solid border-snow bg-white d-flex justify-content-center text-center padding-20">
                 <div class="padding-t-10 padding-b-10">
-                    <a href="../index.html" class="brand_sm margin-b-20 d-block">
+                    <a href="../../quranweb/" class="brand_sm margin-b-20 d-block">
                         <img src="../img/kitaberbagi-community-logo-pjg.png" alt="">
                     </a>
                     <h3 class="size-13 weight-400 color-secondary margin-b-10">
@@ -377,7 +377,7 @@
 <footer class="em_main_footer with__text just_color p-0">
     <div class="em_body_navigation -active-links -active_primary position-relative">
         <div class="item_link">
-            <a href="../kalender/index.html" class="btn btn_navLink">
+            <a href="../kalender/" class="btn btn_navLink">
                 <div class="icon_current">
                     <svg id="Iconly_Two-tone_Calendar" data-name="Iconly/Two-tone/Calendar"
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -429,7 +429,7 @@
             </a>
         </div>
         <div class="item_link">
-            <a href="../jadwalsholatdanimsakiah/index.html" class="btn btn_navLink">
+            <a href="../jadwalsholatdanimsakiah/" class="btn btn_navLink">
                 <div class="icon_current">
                     <i class="fas fa-clock"></i>
                 </div>
@@ -437,7 +437,7 @@
             </a>
         </div>
         <div class="item_link">
-            <a href="../index.html" class="btn btn_navLink">
+            <a href="../../quranweb/" class="btn btn_navLink">
                 <button type="button" class="btn btnCircle_default _lg">
                     <svg id="Iconly_Curved_Home" data-name="Iconly/Curved/Home" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                         <g id="Home" transform="translate(2 1.667)">
@@ -478,7 +478,7 @@
             </a>
         </div>
         <div class="item_link">
-            <a href="../setting/index.html" class="btn btn_navLink">
+            <a href="../setting/" class="btn btn_navLink">
                 <div class="icon_current">
                     <svg id="Iconly_Two-tone_Setting" data-name="Iconly/Two-tone/Setting"
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">

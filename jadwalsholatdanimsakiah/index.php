@@ -46,7 +46,7 @@
       <!-- Start main_haeder -->
       <header class="main_haeder multi_item">
         <div class="em_side_right">
-          <a class="btn btn__back rounded-circle bg-snow" href="../index.html">
+          <a class="btn btn__back rounded-circle bg-snow" href="../../quranweb/">
             <i class="tio-chevron_left"></i>
           </a>
         </div>
@@ -102,7 +102,7 @@
 <footer class="em_main_footer with__text just_color p-0">
   <div class="em_body_navigation -active-links -active_primary position-relative">
       <div class="item_link">
-          <a href="../kalender/index.html" class="btn btn_navLink">
+          <a href="../kalender/" class="btn btn_navLink">
               <div class="icon_current">
                   <svg id="Iconly_Two-tone_Calendar" data-name="Iconly/Two-tone/Calendar"
                       xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -154,7 +154,7 @@
           </a>
       </div>
       <div class="item_link">
-          <a href="../jadwalsholatdanimsakiah/index.html" class="btn btn_navLink">
+          <a href="../jadwalsholatdanimsakiah/" class="btn btn_navLink">
               <div class="">
                   <i class="fas fa-clock"></i>
               </div>
@@ -162,7 +162,7 @@
           </a>
       </div>
       <div class="item_link">
-          <a href="../index.html" class="btn btn_navLink">
+          <a href="../../quranweb/" class="btn btn_navLink">
               <button type="button" class="btn btnCircle_default _lg">
                   <svg id="Iconly_Curved_Home" data-name="Iconly/Curved/Home" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                       <g id="Home" transform="translate(2 1.667)">
@@ -203,7 +203,7 @@
           </a>
       </div>
       <div class="item_link">
-          <a href="../setting/index.html" class="btn btn_navLink">
+          <a href="../setting/" class="btn btn_navLink">
               <div class="icon_current">
                   <svg id="Iconly_Two-tone_Setting" data-name="Iconly/Two-tone/Setting"
                       xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -270,7 +270,7 @@
             <div class="modal-body">
                 <ul class="nav flex-column -active-links">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link" href="../../quranweb/">
                             <div class="">
                                 <div class="icon_current">
                                     <svg id="Iconly_Curved_Discovery" data-name="Iconly/Curved/Discovery"

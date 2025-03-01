@@ -364,7 +364,7 @@ body {
                     </button>
                 </div>
                 <div class="em_brand">
-                    <a href="index.html">
+                    <a href="../quranweb/">
                         <img src="img/kitaberbagi-community-logo-pjg.png" alt="">
                     </a>
                 </div>
@@ -507,14 +507,14 @@ body {
                 <!-- Start Enlarged Operations Service -->
                 <section class="np__bkOperationsService padding-t-80 padding-b-50 bg-white">
                     <div class="em__actions d-flex flex-row flex-nowrap justify-content-center align-items-center">
-                        <a href="quran/index.html" class="btn p-0 m-1 transform-scale-hover flex-shrink-0 text-center">
+                        <a href="quran/" class="btn p-0 m-1 transform-scale-hover flex-shrink-0 text-center">
                             <div class="icon bg-red bg-opacity-20 rounded-circle shadow-sm d-flex justify-content-center align-items-center"
                                 style="width: 30px; height: 30px;">
                                 <i class="fas fa-quran" style="font-size: 16px; color: #ffffffbf;"></i>
                             </div>
                             <span class="d-block mt-0 size-12 weight-600 color-secondary text-center">Al-Qur'an</span>
                         </a>
-                        <a href="jadwalsholatdanimsakiah/index.html"
+                        <a href="jadwalsholatdanimsakiah/"
                             class="btn p-0 m-1 transform-scale-hover flex-shrink-0 text-center">
                             <div class="icon bg-green bg-opacity-20 rounded-circle shadow-sm d-flex justify-content-center align-items-center"
                                 style="width: 30px; height: 30px;">
@@ -522,7 +522,7 @@ body {
                             </div>
                             <span class="d-block mt-0 size-12 weight-600 color-secondary text-center">Jadwal Sholat</span>
                         </a>
-                        <a href="doa/index.html" class="btn p-0 m-1 transform-scale-hover flex-shrink-0 text-center">
+                        <a href="doa/" class="btn p-0 m-1 transform-scale-hover flex-shrink-0 text-center">
                             <div class="icon bg-yellow bg-opacity-20 rounded-circle shadow-sm d-flex justify-content-center align-items-center"
                                 style="width: 30px; height: 30px;">
                                 <i class="fas fa-hands" style="font-size: 16px; color: #ffc107;"></i>
@@ -681,7 +681,7 @@ body {
             <section
                 class="emSimple_main_footer margin-t-10 border-t border-t-solid border-snow bg-white d-flex justify-content-center text-center padding-20">
                 <div class="padding-t-10 padding-b-10">
-                    <a href="index.html" class="brand_sm margin-b-20 d-block">
+                    <a href="../quranweb/" class="brand_sm margin-b-20 d-block">
                         <img src="img/kitaberbagi-community-logo-pjg.png" alt="">
                     </a>
                     <h3 class="size-13 weight-400 color-secondary margin-b-10">
@@ -720,7 +720,7 @@ body {
 <footer class="em_main_footer with__text just_color p-0">
     <div class="em_body_navigation -active-links -active_primary position-relative">
         <div class="item_link">
-            <a href="kalender/index.html" class="btn btn_navLink">
+            <a href="kalender/" class="btn btn_navLink">
                 <div class="icon_current">
                     <svg id="Iconly_Two-tone_Calendar" data-name="Iconly/Two-tone/Calendar"
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -772,7 +772,7 @@ body {
             </a>
         </div>
         <div class="item_link">
-            <a href="jadwalsholatdanimsakiah/index.html" class="btn btn_navLink">
+            <a href="jadwalsholatdanimsakiah/" class="btn btn_navLink">
                 <div class="icon_current">
                     <i class="fas fa-clock"></i>
                 </div>
@@ -821,7 +821,7 @@ body {
             </a>
         </div>
         <div class="item_link">
-            <a href="setting/index.html" class="btn btn_navLink">
+            <a href="setting/" class="btn btn_navLink">
                 <div class="icon_current">
                     <svg id="Iconly_Two-tone_Setting" data-name="Iconly/Two-tone/Setting"
                         xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -903,8 +903,32 @@ body {
                     <div class="modal-body">
                         <ul class="nav flex-column -active-links">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">
-                                    <div class="">
+                                <a class="nav-link" href="../quranweb/">
+                                <div class="">
+                                        <div class="icon_current">
+                                            <svg id="Iconly_Curved_Home" data-name="Iconly/Curved/Home"
+                                                xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 20 20">
+                                                <g id="Home" transform="translate(2 1.667)">
+                                                    <path id="Stroke_1" data-name="Stroke 1" d="M0,.5H4.846"
+                                                        transform="translate(5.566 11.28)" fill="none" stroke="#9498ac"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-miterlimit="10" stroke-width="1.5" />
+                                                    <path id="Stroke_2" data-name="Stroke 2"
+                                                        d="M0,9.761C0,5.068.512,5.4,3.266,2.842,4.471,1.872,6.346,0,7.965,0S11.5,1.862,12.712,2.842c2.754,2.554,3.265,2.227,3.265,6.919,0,6.906-1.633,6.906-7.988,6.906S0,16.667,0,9.761Z"
+                                                        transform="translate(0)" fill="none" stroke="#9498ac"
+                                                        stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-miterlimit="10" stroke-width="1.5" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <span class="title_link">Homepages</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="app-homes.html">
+                                <div class="">
                                         <div class="icon_current">
                                             <svg id="Iconly_Curved_Discovery" data-name="Iconly/Curved/Discovery"
                                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -924,30 +948,6 @@ body {
                                             </svg>
                                         </div>
                                         <span class="title_link">Kiblat</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="app-homes.html">
-                                    <div class="">
-                                        <div class="icon_current">
-                                            <svg id="Iconly_Curved_Home" data-name="Iconly/Curved/Home"
-                                                xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20">
-                                                <g id="Home" transform="translate(2 1.667)">
-                                                    <path id="Stroke_1" data-name="Stroke 1" d="M0,.5H4.846"
-                                                        transform="translate(5.566 11.28)" fill="none" stroke="#9498ac"
-                                                        stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-miterlimit="10" stroke-width="1.5" />
-                                                    <path id="Stroke_2" data-name="Stroke 2"
-                                                        d="M0,9.761C0,5.068.512,5.4,3.266,2.842,4.471,1.872,6.346,0,7.965,0S11.5,1.862,12.712,2.842c2.754,2.554,3.265,2.227,3.265,6.919,0,6.906-1.633,6.906-7.988,6.906S0,16.667,0,9.761Z"
-                                                        transform="translate(0)" fill="none" stroke="#9498ac"
-                                                        stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-miterlimit="10" stroke-width="1.5" />
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <span class="title_link">Homepages</span>
                                     </div>
                                 </a>
                             </li>
@@ -1128,14 +1128,14 @@ body {
                     <div class="modal-body px-0 ">
                         <div class="np__bkOperationsService padding-t-20 padding-b-20">
                             <div class="em__actions d-flex flex-row flex-nowrap justify-content-center align-items-center">
-                                <a href="quran/index.html" class="btn p-1 m-1 transform-scale-hover flex-shrink-0 text-center">
+                                <a href="quran/" class="btn p-1 m-1 transform-scale-hover flex-shrink-0 text-center">
                                     <div class="icon bg-red bg-opacity-20 rounded-circle shadow-sm d-flex justify-content-center align-items-center"
                                         style="width: 40px; height: 40px;">
                                         <i class="fas fa-quran" style="font-size: 20px; color: #ffffff;"></i>
                                     </div>
                                     <span class="d-block mt-1 size-14 weight-600 color-secondary text-center">Qur'an</span>
                                 </a>
-                                <a href="jadwalsholatdanimsakiah/index.html"
+                                <a href="jadwalsholatdanimsakiah/"
                                     class="btn p-1 m-1 transform-scale-hover flex-shrink-0 text-center">
                                     <div class="icon bg-green bg-opacity-20 rounded-circle shadow-sm d-flex justify-content-center align-items-center"
                                         style="width: 40px; height: 40px;">
@@ -1144,14 +1144,14 @@ body {
                                     <span class="d-block mt-1 size-14 weight-600 color-secondary text-center">Jadwal
                                         Sholat</span>
                                 </a>
-                                <a href="doa/index.html" class="btn p-1 m-1 transform-scale-hover flex-shrink-0 text-center">
+                                <a href="doa/" class="btn p-1 m-1 transform-scale-hover flex-shrink-0 text-center">
                                     <div class="icon bg-yellow bg-opacity-20 rounded-circle shadow-sm d-flex justify-content-center align-items-center"
                                         style="width: 40px; height: 40px;">
                                         <i class="fas fa-hands" style="font-size: 20px; color: #ffc107;"></i>
                                     </div>
                                     <span class="d-block mt-1 size-14 weight-600 color-secondary text-center">Doa</span>
                                 </a>
-                                <a href="hadist/index.html" class="btn p-1 m-1 transform-scale-hover flex-shrink-0 text-center">
+                                <a href="hadist/" class="btn p-1 m-1 transform-scale-hover flex-shrink-0 text-center">
                                     <div class="icon bg-primary bg-opacity-20 rounded-circle shadow-sm d-flex justify-content-center align-items-center"
                                         style="width: 40px; height: 40px;">
                                         <i class="fas fa-book" style="font-size: 20px; color: #ffffff;"></i>
@@ -1160,28 +1160,28 @@ body {
                                 </a>
                             </div>
                             <div class="em__actions d-flex flex-row flex-nowrap justify-content-center align-items-center">
-                                <a href="kalender/index.html" class="btn p-1 m-1 transform-scale-hover flex-shrink-0 text-center">
+                                <a href="kalender/" class="btn p-1 m-1 transform-scale-hover flex-shrink-0 text-center">
                                     <div class="icon bg-pink bg-opacity-20 rounded-circle shadow-sm d-flex justify-content-center align-items-center"
                                         style="width: 40px; height: 40px;">
                                         <i class="fas fa-calendar-alt" style="font-size: 20px; color: #ffe4f1;"></i>
                                     </div>
                                     <span class="d-block mt-1 size-14 weight-600 color-secondary text-center">Kalender</span>
                                 </a>
-                                <a href="kiblat/index.html" class="btn p-1 m-1 transform-scale-hover flex-shrink-0 text-center">
+                                <a href="kiblat/" class="btn p-1 m-1 transform-scale-hover flex-shrink-0 text-center">
                                     <div class="icon bg-turquoise bg-opacity-20 rounded-circle shadow-sm d-flex justify-content-center align-items-center"
                                         style="width: 40px; height: 40px;">
                                         <i class="fas fa-compass" style="font-size: 20px; color: #c8fcec;"></i>
                                     </div>
                                     <span class="d-block mt-1 size-14 weight-600 color-secondary text-center">Kiblat</span>
                                 </a>
-                                <a href="motivasi/index.html" class="btn p-1 m-1 transform-scale-hover flex-shrink-0 text-center">
+                                <a href="motivasi/" class="btn p-1 m-1 transform-scale-hover flex-shrink-0 text-center">
                                     <div class="icon bg-purple bg-opacity-20 rounded-circle shadow-sm d-flex justify-content-center align-items-center"
                                         style="width: 40px; height: 40px;">
                                         <i class="fas fa-quote-left" style="font-size: 20px; color: #f1edff;"></i>
                                     </div>
                                     <span class="d-block mt-1 size-14 weight-600 color-secondary text-center">Motivasi</span>
                                 </a>
-                                <a href="kalkulatorzakat/index.html" class="btn p-1 m-1 transform-scale-hover flex-shrink-0 text-center">
+                                <a href="kalkulatorzakat/" class="btn p-1 m-1 transform-scale-hover flex-shrink-0 text-center">
                                     <div class="icon bg-orange bg-opacity-20 rounded-circle shadow-sm d-flex justify-content-center align-items-center"
                                         style="width: 40px; height: 40px;">
                                         <i class="fas fa-calculator" style="font-size: 20px; color: #fd7e14;"></i>
