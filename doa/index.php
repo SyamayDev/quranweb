@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lateef&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
+    <link rel="icon" type="image/png" href="../myassets/img/favicon2 (2).png" sizes="32x32">
+    <link rel="apple-touch-icon" href="../myassets/img/favicon2 (2).png">
+
     <!-- Muslim Web CSS -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/icons.css">
@@ -20,7 +23,7 @@
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/normalize.css">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../myassets/css/doa.css">
 
     <title>Doa Digital</title>
 </head>
@@ -321,8 +324,8 @@
   </footer>
   <!-- End. em_main_footer -->
 
-        <!-- Modal Sidebar Menu dari Hadist Digital -->
-        <div class="modal sidebarMenu -left fade" id="mdllSidebarMenu-background" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Modal Sidebar Menu dari Hadist Digital -->
+<div class="modal sidebarMenu -left fade" id="mdllSidebarMenu-background" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header d-block">
@@ -349,22 +352,7 @@
                         <ul class="nav flex-column -active-links">
                             <li class="nav-item">
                                 <a class="nav-link" href="../../quranweb/">
-                                    <div class="">
-                                        <div class="icon_current">
-                                            <svg id="Iconly_Curved_Discovery" data-name="Iconly/Curved/Discovery" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                                <g id="Discovery" transform="translate(2.292 2.292)">
-                                                    <path id="Stroke_1" data-name="Stroke 1" d="M0,7.708c0,5.781,1.927,7.708,7.708,7.708s7.708-1.927,7.708-7.708S13.489,0,7.708,0,0,1.927,0,7.708Z" transform="translate(0 0)" fill="none" stroke="#9498ac" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" />
-                                                    <path id="Stroke_3" data-name="Stroke 3" d="M0,5.5,1.312,1.312,5.5,0,4.192,4.191Z" transform="translate(4.957 4.957)" fill="none" stroke="#9498ac" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" />
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <span class="title_link">Kiblat</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="app-homes.html">
-                                    <div class="">
+                                <div class="">
                                         <div class="icon_current">
                                             <svg id="Iconly_Curved_Home" data-name="Iconly/Curved/Home" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                                                 <g id="Home" transform="translate(2 1.667)">
@@ -378,24 +366,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="app-components.html">
-                                    <div class="">
-                                        <div class="icon_current">
-                                            <svg id="Iconly_Curved_More_Circle" data-name="Iconly/Curved/More Circle" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                                <g id="More_Circle" data-name="More Circle" transform="translate(2.292 2.292)">
-                                                    <path id="Stroke_4" data-name="Stroke 4" d="M0,7.708C0,1.927,1.927,0,7.708,0s7.708,1.927,7.708,7.708-1.927,7.708-7.708,7.708S0,13.489,0,7.708Z" transform="translate(0 0)" fill="none" stroke="#556fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" />
-                                                    <path id="Stroke_11" data-name="Stroke 11" d="M.5.5H.5" transform="translate(9.883 8.792)" fill="none" stroke="#556fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
-                                                    <path id="Stroke_13" data-name="Stroke 13" d="M.5.5H.5" transform="translate(7.383 5.458)" fill="none" stroke="#556fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
-                                                    <path id="Stroke_15" data-name="Stroke 15" d="M.5.5H.5" transform="translate(4.876 8.792)" fill="none" stroke="#556fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <span class="title_link">Components</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="app-pages.html">
+                                <a class="nav-link" href="https://kitaberbagi.com/forum/">
                                     <div class="">
                                         <div class="icon_current">
                                             <svg id="Iconly_Curved_Document" data-name="Iconly/Curved/Document" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
@@ -407,13 +378,45 @@
                                                 </g>
                                             </svg>
                                         </div>
-                                        <span class="title_link">Pages</span>
+                                        <span class="title_link">Community</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../quran/">
+                                    <div class="">
+                                        <div class="icon_current">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="20" height="20">
+                                                <rect x="8" y="10" width="48" height="44" rx="4" ry="4" fill="none" stroke="#9498ac" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <rect x="12" y="14" width="40" height="36" rx="2" ry="2" fill="none" stroke="#9498ac" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <line x1="32" y1="14" x2="32" y2="50" stroke="#9498ac" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <polygon points="32,26 36,30 32,34 28,30" fill="none" stroke="#9498ac" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <circle cx="32" cy="30" r="2" fill="none" stroke="#9498ac" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <rect x="8" y="50" width="48" height="4" fill="none" stroke="#9498ac" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <span class="title_link">Al - Quran</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                <div class="">
+                                        <div class="icon_current">
+                                            <svg id="Iconly_Curved_Discovery" data-name="Iconly/Curved/Discovery" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                                <g id="Discovery" transform="translate(2.292 2.292)">
+                                                    <path id="Stroke_1" data-name="Stroke 1" d="M0,7.708c0,5.781,1.927,7.708,7.708,7.708s7.708-1.927,7.708-7.708S13.489,0,7.708,0,0,1.927,0,7.708Z" transform="translate(0 0)" fill="none" stroke="#9498ac" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" />
+                                                    <path id="Stroke_3" data-name="Stroke 3" d="M0,5.5,1.312,1.312,5.5,0,4.192,4.191Z" transform="translate(4.957 4.957)" fill="none" stroke="#9498ac" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <span class="title_link">Kiblat</span>
                                     </div>
                                 </a>
                             </li>
                             <label class="title__label">other</label>
                             <li class="nav-item">
-                                <a class="nav-link" href="page-profile.html">
+                                <a class="nav-link" href="../setting/">
                                     <div class="">
                                         <div class="icon_current">
                                             <svg id="Iconly_Curved_Setting" data-name="Iconly/Curved/Setting" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
@@ -431,7 +434,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="page-support.html">
+                                <a class="nav-link" href="https://easydigital.co.id/">
                                     <div class="">
                                         <div class="icon_current">
                                             <svg id="Iconly_Curved_Message" data-name="Iconly/Curved/Message" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
@@ -447,7 +450,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="page-about.html">
-                                    <div class="">
+                                    <div class="#">
                                         <div class="icon_current">
                                             <svg id="Iconly_Curved_Info_Square" data-name="Iconly/Curved/Info Square" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                                                 <g id="Info_Square" data-name="Info Square" transform="translate(2.292 2.292)">
@@ -479,6 +482,7 @@
             </div>
         </div>
     </div>
+<!-- End Sidebar -->
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -487,6 +491,6 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
-    <script src="script.js"></script>
+    <script src="../myassets/js/doa.js"></script>
 </body>
 </html>

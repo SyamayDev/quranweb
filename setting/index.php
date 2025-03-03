@@ -12,8 +12,8 @@
     <meta name="description" content="Nepro – The Multipurpose Mobile HTML5 Template">
     <meta name="keywords" content="bootstrap 4, mobile template, 404, chat, about, cordova, phonegap, mobile, html, ecommerce, shopping, store, delivery, wallet, banking, education, jobs, careers, distance learning" />
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../assets/img/favicon/32.png" sizes="32x32">
-    <link rel="apple-touch-icon" href="../assets/img/favicon/favicon192.png">
+    <link rel="icon" type="image/png" href="../myassets/img/favicon2 (2).png" sizes="32x32">
+    <link rel="apple-touch-icon" href="../myassets/img/favicon2 (2).png">
     <!-- Font Awesome 5 Online Links -->
     <link href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css" rel="stylesheet">
     <!-- CSS Libraries -->
@@ -25,139 +25,7 @@
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/normalize.css">
     <!-- Custom CSS -->
-    <style>
-        :root {
-            --color-black: #000;
-            --color-white: #fff;
-            --color-primary: #556fff;
-            --color-secondary: #0e132d;
-            --color-snow: #cbcdd8;
-            --color-red: #ff4040;
-            --color-orange: #ff702c;
-            --color-blue: #4a8cfd;
-            --color-yellow: #fa9905;
-            --color-green: #41bd83;
-            --color-text: #9498ac;
-            --color-comment: #5d6072;
-            --color-pink: #ff59a2;
-            --color-turquoise: #20bbd3;
-            --color-purple: #a659ff;
-            --bg-black: #000;
-            --bg-white: #fff;
-            --bg-primary: #556fff;
-            --bg-secondary: #0e132d;
-            --bg-snow: #f7f7f8;
-            --bg-red: #ff4040;
-            --bg-orange: #ff702c;
-            --bg-blue: #53a7f9;
-            --bg-yellow: #fa9905;
-            --bg-green: #41bd83;
-            --bg-purple: #a659ff;
-            --bg-pink: #ff59a2;
-            --bg-turquoise: #20bbd3;
-            --border-black: #000;
-            --border-white: #fff;
-            --border-primary: #556fff;
-            --border-secondary: #0e132d;
-            --border-snow: #efeff6;
-            --border-red: #ff4040;
-            --border-orange: #ff702c;
-            --border-blue: #4a8cfd;
-            --border-yellow: #fa9905;
-            --border-green: #41bd83;
-            --border-input: #efeff6;
-        }
-
-        /* Dark Mode Overrides */
-        [data-theme="dark"] {
-            --bg-white: #0e132d;
-            --bg-secondary: #1a1f3a;
-            --color-white: #cbcdd8;
-            --color-text: #a1a5b7;
-            --bg-snow: #1a1f3a;
-            --border-snow: #2d3553;
-            --bg-primary: #556fff;
-        }
-
-        body {
-            background-color: var(--bg-white);
-            color: var(--color-text);
-            transition: all 0.3s ease;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        }
-
-        .settings-accordion {
-            padding: 70px 20px 20px 20px;
-            background-color: var(--bg-snow);
-            border-radius: 10px;
-        }
-
-        .card {
-            background-color: var(--bg-white);
-            border: 1px solid var(--border-snow);
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
-
-        .card-header {
-            background-color: var(--bg-secondary);
-            color: var(--color-white);
-        }
-
-        .btn-link {
-            color: var(--color-white);
-            text-decoration: none;
-        }
-
-        .btn-link:hover {
-            color: var(--color-snow);
-        }
-
-        .form-control {
-            background-color: var(--bg-secondary);
-            color: var(--color-white);
-            border: 1px solid var(--border-input);
-        }
-
-        .btn-primary {
-            background-color: var(--bg-primary);
-            color: var(--color-white);
-            border: none;
-        }
-
-        .btn-primary:hover {
-            background-color: var(--color-blue);
-        }
-
-        .custom-control-label {
-            color: var(--color-text);
-        }
-
-        h3 {
-            color: var(--color-secondary);
-        }
-
-        label {
-            color: var(--color-text);
-        }
-
-        hr {
-            border-color: var(--border-snow);
-        }
-
-
-        .emSimple_main_footer {
-            background-color: var(--bg-white);
-            border-top: 1px solid var(--border-snow);
-        }
-
-        .em_main_footer.with__text.just_color.p-0 {
-            position: sticky;
-            bottom: 0;
-            width: 100%;
-            z-index: 1000;
-        }
-    </style>
+    <link rel="stylesheet" href="../myassets/css/setting.css">
     <!-- Manifest -->
     <link rel="manifest" href="_manifest.json" />
 </head>
@@ -348,7 +216,7 @@
             <section class="emSimple_main_footer margin-t-10 border-t border-t-solid border-snow bg-white d-flex justify-content-center text-center padding-20">
                 <div class="padding-t-10 padding-b-10">
                     <a href="../../quranweb/" class="brand_sm margin-b-20 d-block">
-                        <img src="../img/kitaberbagi-community-logo-pjg.png" alt="">
+                        <img src="../myassets/img/kitaberbagi-community-logo-pjg.png" alt="">
                     </a>
                     <h3 class="size-13 weight-400 color-secondary margin-b-10">
                         Copyright © Kita Berbagi Community 2025. All Rights Reserved.
@@ -575,116 +443,7 @@
     <script src="../assets/js/pwa-services.js"></script>
 
     <!-- Custom JavaScript -->
-    <script>
-        $(document).ready(function() {
-            // Theme Toggle
-            const themeToggle = $('#themeToggle');
-            const body = $('body');
-
-            themeToggle.on('click', function() {
-                if (body.attr('data-theme') === 'light') {
-                    body.attr('data-theme', 'dark');
-                    localStorage.setItem('theme', 'dark');
-                } else {
-                    body.attr('data-theme', 'light');
-                    localStorage.setItem('theme', 'light');
-                }
-            });
-
-            // Load Saved Theme
-            const savedTheme = localStorage.getItem('theme');
-            if (savedTheme) {
-                body.attr('data-theme', savedTheme);
-            }
-
-            // Load Saved Settings
-            $('#name').val(localStorage.getItem('userName') || 'Syahril May Mubdi');
-            $('#email').val(localStorage.getItem('userEmail') || 'example@email.com');
-            $('#language').val(localStorage.getItem('language') || 'English (UK)');
-            $('#prayerNotification').prop('checked', localStorage.getItem('prayerNotification') === 'true');
-            $('#imsakNotification').prop('checked', localStorage.getItem('imsakNotification') === 'true');
-            $('#location').val(localStorage.getItem('location') || '');
-            $('#prayerMethod').val(localStorage.getItem('prayerMethod') || 'Muslim World League');
-            $('#quranFontSize').val(localStorage.getItem('quranFontSize') || 'Medium');
-
-            // Personal Details Form
-            $('#personalDetailsForm').submit(function(e) {
-                e.preventDefault();
-                const name = $('#name').val();
-                const email = $('#email').val();
-                localStorage.setItem('userName', name);
-                localStorage.setItem('userEmail', email);
-                alert('Personal details saved successfully!');
-            });
-
-            // Password Form
-            $('#passwordForm').submit(function(e) {
-                e.preventDefault();
-                const newPassword = $('#newPassword').val();
-                const confirmPassword = $('#confirmPassword').val();
-                if (newPassword === confirmPassword) {
-                    localStorage.setItem('userPassword', newPassword);
-                    alert('Password changed successfully!');
-                    this.reset();
-                } else {
-                    alert('Passwords do not match!');
-                }
-            });
-
-            // Language Selection
-            $('#language').change(function() {
-                const language = $(this).val();
-                localStorage.setItem('language', language);
-                alert('Language set to: ' + language);
-            });
-
-            // Notification Toggles
-            $('#prayerNotification, #imsakNotification').change(function() {
-                const id = this.id;
-                const isChecked = $(this).is(':checked');
-                localStorage.setItem(id, isChecked);
-                alert(id + ' set to: ' + isChecked);
-            });
-
-            // Location Setting
-            $('#setLocationBtn').click(function() {
-                const location = $('#location').val();
-                if (location) {
-                    localStorage.setItem('location', location);
-                    alert('Location set to: ' + location);
-                } else {
-                    alert('Please enter a location!');
-                }
-            });
-
-            // Prayer Method Selection
-            $('#prayerMethod').change(function() {
-                const method = $(this).val();
-                localStorage.setItem('prayerMethod', method);
-                alert('Prayer calculation method set to: ' + method);
-            });
-
-            // Quran Font Size Selection
-            $('#quranFontSize').change(function() {
-                const fontSize = $(this).val();
-                localStorage.setItem('quranFontSize', fontSize);
-                alert('Quran font size set to: ' + fontSize);
-            });
-
-            // Support Form
-            $('#supportForm').submit(function(e) {
-                e.preventDefault();
-                const subject = $('#subject').val();
-                const message = $('#message').val();
-                if (subject && message) {
-                    alert('Support request sent: ' + subject);
-                    this.reset();
-                } else {
-                    alert('Please fill in all fields!');
-                }
-            });
-        });
-    </script>
+    <script src="../myassets/js/setting.js"></script>
 </body>
 
 </html>

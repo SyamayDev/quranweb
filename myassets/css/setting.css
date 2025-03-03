@@ -1,0 +1,132 @@
+
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    --color-primary: #556fff;
+    --color-secondary: #0e132d;
+    --color-snow: #cbcdd8;
+    --color-red: #ff4040;
+    --color-orange: #ff702c;
+    --color-blue: #4a8cfd;
+    --color-yellow: #fa9905;
+    --color-green: #41bd83;
+    --color-text: #9498ac;
+    --color-comment: #5d6072;
+    --color-pink: #ff59a2;
+    --color-turquoise: #20bbd3;
+    --color-purple: #a659ff;
+    --bg-black: #000;
+    --bg-white: #fff;
+    --bg-primary: #556fff;
+    --bg-secondary: #0e132d;
+    --bg-snow: #f7f7f8;
+    --bg-red: #ff4040;
+    --bg-orange: #ff702c;
+    --bg-blue: #53a7f9;
+    --bg-yellow: #fa9905;
+    --bg-green: #41bd83;
+    --bg-purple: #a659ff;
+    --bg-pink: #ff59a2;
+    --bg-turquoise: #20bbd3;
+    --border-black: #000;
+    --border-white: #fff;
+    --border-primary: #556fff;
+    --border-secondary: #0e132d;
+    --border-snow: #efeff6;
+    --border-red: #ff4040;
+    --border-orange: #ff702c;
+    --border-blue: #4a8cfd;
+    --border-yellow: #fa9905;
+    --border-green: #41bd83;
+    --border-input: #efeff6;
+}
+
+/* Dark Mode Overrides */
+[data-theme="dark"] {
+    --bg-white: #0e132d;
+    --bg-secondary: #1a1f3a;
+    --color-white: #cbcdd8;
+    --color-text: #a1a5b7;
+    --bg-snow: #1a1f3a;
+    --border-snow: #2d3553;
+    --bg-primary: #556fff;
+}
+
+body {
+    background-color: var(--bg-white);
+    color: var(--color-text);
+    transition: all 0.3s ease;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.settings-accordion {
+    padding: 70px 20px 20px 20px;
+    background-color: var(--bg-snow);
+    border-radius: 10px;
+}
+
+.card {
+    background-color: var(--bg-white);
+    border: 1px solid var(--border-snow);
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card-header {
+    background-color: var(--bg-secondary);
+    color: var(--color-white);
+}
+
+.btn-link {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    color: var(--color-snow);
+}
+
+.form-control {
+    background-color: var(--bg-secondary);
+    color: var(--color-white);
+    border: 1px solid var(--border-input);
+}
+
+.btn-primary {
+    background-color: var(--bg-primary);
+    color: var(--color-white);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-blue);
+}
+
+.custom-control-label {
+    color: var(--color-text);
+}
+
+h3 {
+    color: var(--color-secondary);
+}
+
+label {
+    color: var(--color-text);
+}
+
+hr {
+    border-color: var(--border-snow);
+}
+
+
+.emSimple_main_footer {
+    background-color: var(--bg-white);
+    border-top: 1px solid var(--border-snow);
+}
+
+.em_main_footer.with__text.just_color.p-0 {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}

@@ -2,9 +2,9 @@ let citiesData = [];
 let currentSchedule = [];
 let audioAllowed = false;
 let lastAzanPrayer = "";
-const adzanSubuhAudio = new Audio('adzansubuh.mp3');
-const semuaAdzanAudio = new Audio('semuaadzan.mp3');
-const imsakAudio = new Audio('waktuimsaktelahtiba.mp3');
+const adzanSubuhAudio = new Audio('../../myassets/audio/adzansubuh.mp3');
+const semuaAdzanAudio = new Audio('../../myassets/audio/semuaadzan.mp3');
+const imsakAudio = new Audio('../../myassets/audio/waktuimsaktelahtiba.mp3');
 let isPlaying = false;
 let currentAudio = null;
 
@@ -425,8 +425,8 @@ function checkPrayerTime() {
           span.style.animation = `marquee ${animationDuration}s linear infinite`;
 
           if (lastAzanPrayer !== currentPrayerName && audioAllowed) {
-            let soundUrl = currentPrayerName.toLowerCase() === "imsak" ? "waktuimsaktelahtiba.mp3" :
-                          currentPrayerName.toLowerCase() === "subuh" ? "adzansubuh.mp3" : "semuaadzan.mp3";
+            let soundUrl = currentPrayerName.toLowerCase() === "imsak" ? "../../myassets/audio/waktuimsaktelahtiba.mp3" :
+                          currentPrayerName.toLowerCase() === "subuh" ? "../../myassets/audio/adzansubuh.mp3" : "../../myassets/audio/semuaadzan.mp3";
             const azanAudio = new Audio(soundUrl);
             azanAudio.play().catch(err => console.error("Error memutar audio:", err));
             lastAzanPrayer = currentPrayerName;

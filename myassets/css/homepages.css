@@ -1,0 +1,296 @@
+/* Define CSS Variables for Light Mode */
+:root {
+--color-black: #000;
+--color-white: #fff;
+--color-primary: #556fff;
+--color-secondary: #0e132d;
+--color-snow: #cbcdd8;
+--color-text: #9498ac;
+--bg-light: #f8f9fa;
+--bg-black: #000;
+--bg-white: #fff;
+--bg-primary: #556fff;
+--bg-secondary: #0e132d;
+--bg-snow: #f7f7f8;
+--border-black: #000;
+--border-white: #fff;
+--border-primary: #556fff;
+--border-secondary: #0e132d;
+--border-snow: #efeff6;
+}
+
+/* Override Variables for Dark Mode */
+body.darkMode-active {
+--color-black: #fff;
+--color-white: #fff;
+--color-primary: #556fff;
+--color-secondary: #848282; /* Bright text color for dark mode */
+--color-snow: #ffffff;
+--color-text: #9498ac;
+--bg-light: #161c3b;
+--bg-black: #fff;
+--bg-white: #0e132d; /* Dark background for dark mode */
+--bg-primary: #556fff;
+--bg-secondary: #9498ac;
+--bg-snow: #0a0f27;
+--border-black: #000;
+--border-white: #0e132d;
+--border-primary: #556fff;
+--border-secondary: #0e132d;
+--border-snow: #242a48;
+}
+
+/* Apply Variables to Body */
+body {
+background-color: var(--bg-white);
+color: var(--color-secondary);
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* YouTube Carousel Specific Styles */
+.youtube_carousel a {
+color: var(--color-black);
+background-color: var(--bg-white);
+transition: background-color 0.3s ease;
+}
+
+.youtube_carousel .video_item h3 {
+color: var(--color-secondary);
+transition: color 0.3s ease;
+}
+
+/* Ensure all elements using bg-white or color-secondary adapt */
+.bg-white {
+background-color: var(--bg-white);
+}
+
+.bg-light {
+background-color: var(--bg-light);
+}
+
+.color-secondary {
+color: var(--color-secondary);
+}
+/* Tata letak dasar untuk section */
+.np__bkOperationsService .em__actions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    padding: 0 5px;
+}
+
+.em__actions .btn {
+    flex-shrink: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.transform-scale-hover {
+    transition: transform 0.3s ease;
+}
+
+.transform-scale-hover:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 576px) {
+    .np__bkOperationsService .em__actions {
+        gap: 1px;
+        padding: 50px 2px 5px 2px;
+    }
+
+    .np__bkOperationsService .em__actions .btn .icon {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .np__bkOperationsService .em__actions .btn i {
+        font-size: 16px !important;
+    }
+
+    .np__bkOperationsService .em__actions .btn svg {
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    .np__bkOperationsService .em__actions .btn span {
+        font-size: 12px !important;
+        margin-top: 0;
+    }
+
+    .np__bkOperationsService {
+        padding: 5px 0;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .np__bkOperationsService .em__actions {
+        gap: 5px;
+    }
+
+    .np__bkOperationsService .em__actions .btn .icon {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .np__bkOperationsService .em__actions .btn i {
+        font-size: 18px !important;
+    }
+
+    .np__bkOperationsService .em__actions .btn svg {
+        width: 24px !important;
+        height: 24px !important;
+    }
+
+    .np__bkOperationsService .em__actions .btn span {
+        font-size: 12px !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .np__bkOperationsService .em__actions {
+        gap: 10px;
+    }
+
+    .np__bkOperationsService .em__actions .btn .icon {
+        width: 70px !important;
+        height: 70px !important;
+    }
+
+    .np__bkOperationsService .em__actions .btn i {
+        font-size: 32px !important;
+    }
+
+    .np__bkOperationsService .em__actions .btn svg {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .np__bkOperationsService .em__actions .btn span {
+        font-size: 18px !important;
+    }
+}
+
+.np__bkOperationsService .em__actions .btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.np__bkOperationsService .em__actions .btn .icon {
+    margin: 0 auto;
+}
+
+.np__bkOperationsService .em__actions .btn span {
+    margin: 0 auto;
+}
+
+.modal .np__bkOperationsService .em__actions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 0 5px;
+}
+
+@media (max-width: 576px) {
+    .modal .np__bkOperationsService .em__actions {
+        gap: 2px;
+        padding: 0 2px;
+    }
+
+    .modal .np__bkOperationsService .em__actions .btn .icon {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .modal .np__bkOperationsService .em__actions .btn i {
+        font-size: 20px !important;
+    }
+
+    .modal .np__bkOperationsService .em__actions .btn svg {
+        width: 24px !important;
+        height: 24px !important;
+    }
+
+    .modal .np__bkOperationsService .em__actions .btn span {
+        font-size: 12px !important;
+        margin-top: 1px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .modal .np__bkOperationsService .em__actions {
+        gap: 5px;
+    }
+
+    .modal .np__bkOperationsService .em__actions .btn .icon {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .modal .np__bkOperationsService .em__actions .btn i {
+        font-size: 24px !important;
+    }
+
+    .modal .np__bkOperationsService .em__actions .btn svg {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .modal .np__bkOperationsService .em__actions .btn span {
+        font-size: 14px !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .modal .np__bkOperationsService .em__actions {
+        gap: 10px;
+    }
+
+    .modal .np__bkOperationsService .em__actions .btn .icon {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    .modal .np__bkOperationsService .em__actions .btn i {
+        font-size: 28px !important;
+    }
+
+    .modal .np__bkOperationsService .em__actions .btn svg {
+        width: 36px !important;
+        height: 36px !important;
+    }
+
+    .modal .np__bkOperationsService .em__actions .btn span {
+        font-size: 16px !important;
+    }
+}
+
+.modal .np__bkOperationsService .em__actions .btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .np__bkOperationsService .em__actions .btn .icon {
+    margin: 0 auto;
+}
+
+.modal .np__bkOperationsService .em__actions .btn span {
+    margin: 0 auto;
+}
+
+.em_main_footer.with__text.just_color.p-0 {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}

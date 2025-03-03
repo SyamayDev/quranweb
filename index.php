@@ -15,8 +15,8 @@
         content="bootstrap 4, mobile template, 404, chat, about, cordova, phonegap, mobile, html, ecommerce, shopping, store, delivery, wallet, banking, education, jobs, careers, distance learning" />
 
     <!-- favicon -->
-    <link rel="icon" type="image/png" href="img/favicon2 (2).png" sizes="32x32">
-    <link rel="apple-touch-icon" href="img/favicon2 (2).png">
+    <link rel="icon" type="image/png" href="myassets/img/favicon2 (2).png" sizes="32x32">
+    <link rel="apple-touch-icon" href="myassets/img/favicon2 (2).png">
 
     <!-- link online font awesome 5 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -46,304 +46,7 @@
     <!-- manifest meta -->
     <link rel="manifest" href="_manifest.json" />
 
-    <style>
-        /* Define CSS Variables for Light Mode */
-:root {
-    --color-black: #000;
-    --color-white: #fff;
-    --color-primary: #556fff;
-    --color-secondary: #0e132d;
-    --color-snow: #cbcdd8;
-    --color-text: #9498ac;
-    --bg-light: #f8f9fa;
-    --bg-black: #000;
-    --bg-white: #fff;
-    --bg-primary: #556fff;
-    --bg-secondary: #0e132d;
-    --bg-snow: #f7f7f8;
-    --border-black: #000;
-    --border-white: #fff;
-    --border-primary: #556fff;
-    --border-secondary: #0e132d;
-    --border-snow: #efeff6;
-}
-
-/* Override Variables for Dark Mode */
-body.darkMode-active {
-    --color-black: #fff;
-    --color-white: #fff;
-    --color-primary: #556fff;
-    --color-secondary: #848282; /* Bright text color for dark mode */
-    --color-snow: #ffffff;
-    --color-text: #9498ac;
-    --bg-light: #161c3b;
-    --bg-black: #fff;
-    --bg-white: #0e132d; /* Dark background for dark mode */
-    --bg-primary: #556fff;
-    --bg-secondary: #9498ac;
-    --bg-snow: #0a0f27;
-    --border-black: #000;
-    --border-white: #0e132d;
-    --border-primary: #556fff;
-    --border-secondary: #0e132d;
-    --border-snow: #242a48;
-}
-
-/* Apply Variables to Body */
-body {
-    background-color: var(--bg-white);
-    color: var(--color-secondary);
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* YouTube Carousel Specific Styles */
-.youtube_carousel a {
-    color: var(--color-black);
-    background-color: var(--bg-white);
-    transition: background-color 0.3s ease;
-}
-
-.youtube_carousel .video_item h3 {
-    color: var(--color-secondary);
-    transition: color 0.3s ease;
-}
-
-/* Ensure all elements using bg-white or color-secondary adapt */
-.bg-white {
-    background-color: var(--bg-white);
-}
-
-.bg-light {
-    background-color: var(--bg-light);
-}
-
-.color-secondary {
-    color: var(--color-secondary);
-}
-        /* Tata letak dasar untuk section */
-        .np__bkOperationsService .em__actions {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-items: center;
-            gap: 2px;
-            padding: 0 5px;
-        }
-
-        .em__actions .btn {
-            flex-shrink: 0;
-            text-align: center;
-            text-decoration: none;
-        }
-
-        .transform-scale-hover {
-            transition: transform 0.3s ease;
-        }
-
-        .transform-scale-hover:hover {
-            transform: scale(1.1);
-        }
-
-        @media (max-width: 576px) {
-            .np__bkOperationsService .em__actions {
-                gap: 1px;
-                padding: 50px 2px 5px 2px;
-            }
-
-            .np__bkOperationsService .em__actions .btn .icon {
-                width: 30px !important;
-                height: 30px !important;
-            }
-
-            .np__bkOperationsService .em__actions .btn i {
-                font-size: 16px !important;
-            }
-
-            .np__bkOperationsService .em__actions .btn svg {
-                width: 20px !important;
-                height: 20px !important;
-            }
-
-            .np__bkOperationsService .em__actions .btn span {
-                font-size: 12px !important;
-                margin-top: 0;
-            }
-
-            .np__bkOperationsService {
-                padding: 5px 0;
-            }
-        }
-
-        @media (min-width: 577px) and (max-width: 768px) {
-            .np__bkOperationsService .em__actions {
-                gap: 5px;
-            }
-
-            .np__bkOperationsService .em__actions .btn .icon {
-                width: 40px !important;
-                height: 40px !important;
-            }
-
-            .np__bkOperationsService .em__actions .btn i {
-                font-size: 18px !important;
-            }
-
-            .np__bkOperationsService .em__actions .btn svg {
-                width: 24px !important;
-                height: 24px !important;
-            }
-
-            .np__bkOperationsService .em__actions .btn span {
-                font-size: 12px !important;
-            }
-        }
-
-        @media (min-width: 769px) {
-            .np__bkOperationsService .em__actions {
-                gap: 10px;
-            }
-
-            .np__bkOperationsService .em__actions .btn .icon {
-                width: 70px !important;
-                height: 70px !important;
-            }
-
-            .np__bkOperationsService .em__actions .btn i {
-                font-size: 32px !important;
-            }
-
-            .np__bkOperationsService .em__actions .btn svg {
-                width: 40px !important;
-                height: 40px !important;
-            }
-
-            .np__bkOperationsService .em__actions .btn span {
-                font-size: 18px !important;
-            }
-        }
-
-        .np__bkOperationsService .em__actions .btn {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .np__bkOperationsService .em__actions .btn .icon {
-            margin: 0 auto;
-        }
-
-        .np__bkOperationsService .em__actions .btn span {
-            margin: 0 auto;
-        }
-
-        .modal .np__bkOperationsService .em__actions {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-items: center;
-            gap: 5px;
-            padding: 0 5px;
-        }
-
-        @media (max-width: 576px) {
-            .modal .np__bkOperationsService .em__actions {
-                gap: 2px;
-                padding: 0 2px;
-            }
-
-            .modal .np__bkOperationsService .em__actions .btn .icon {
-                width: 40px !important;
-                height: 40px !important;
-            }
-
-            .modal .np__bkOperationsService .em__actions .btn i {
-                font-size: 20px !important;
-            }
-
-            .modal .np__bkOperationsService .em__actions .btn svg {
-                width: 24px !important;
-                height: 24px !important;
-            }
-
-            .modal .np__bkOperationsService .em__actions .btn span {
-                font-size: 12px !important;
-                margin-top: 1px;
-            }
-        }
-
-        @media (min-width: 577px) and (max-width: 768px) {
-            .modal .np__bkOperationsService .em__actions {
-                gap: 5px;
-            }
-
-            .modal .np__bkOperationsService .em__actions .btn .icon {
-                width: 50px !important;
-                height: 50px !important;
-            }
-
-            .modal .np__bkOperationsService .em__actions .btn i {
-                font-size: 24px !important;
-            }
-
-            .modal .np__bkOperationsService .em__actions .btn svg {
-                width: 30px !important;
-                height: 30px !important;
-            }
-
-            .modal .np__bkOperationsService .em__actions .btn span {
-                font-size: 14px !important;
-            }
-        }
-
-        @media (min-width: 769px) {
-            .modal .np__bkOperationsService .em__actions {
-                gap: 10px;
-            }
-
-            .modal .np__bkOperationsService .em__actions .btn .icon {
-                width: 60px !important;
-                height: 60px !important;
-            }
-
-            .modal .np__bkOperationsService .em__actions .btn i {
-                font-size: 28px !important;
-            }
-
-            .modal .np__bkOperationsService .em__actions .btn svg {
-                width: 36px !important;
-                height: 36px !important;
-            }
-
-            .modal .np__bkOperationsService .em__actions .btn span {
-                font-size: 16px !important;
-            }
-        }
-
-        .modal .np__bkOperationsService .em__actions .btn {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .modal .np__bkOperationsService .em__actions .btn .icon {
-            margin: 0 auto;
-        }
-
-        .modal .np__bkOperationsService .em__actions .btn span {
-            margin: 0 auto;
-        }
-
-        .em_main_footer.with__text.just_color.p-0 {
-            position: sticky;
-            bottom: 0;
-            width: 100%;
-            z-index: 1000;
-        }
-    </style>
+    <link rel="stylesheet" href="myassets/css/homepages.css">
 </head>
 
 <body>
@@ -365,11 +68,11 @@ body {
                 </div>
                 <div class="em_brand">
                     <a href="../quranweb/">
-                        <img src="img/kitaberbagi-community-logo-pjg.png" alt="">
+                        <img src="myassets/img/kitaberbagi-community-logo-pjg.png" alt="">
                     </a>
                 </div>
                 <div class="em_side_right">
-                    <a href="page-wishlist.html" class="btn justify-content-center relative">
+                    <a href="https://kitaberbagi.com/forum/" class="btn justify-content-center relative">
                         <svg class="color-secondary" id="Iconly_Two-tone_Notification"
                             data-name="Iconly/Two-tone/Notification" xmlns="http://www.w3.org/2000/svg" width="24"
                             height="24" viewBox="0 0 24 24">
@@ -407,7 +110,7 @@ body {
                     <div class="owl-carousel owl-theme em-owlCentred em_owl_swipe margin-t-20">
                         <div class="item em_item">
                             <div class="em_cover_img">
-                                <img src="img/masjidindah.jpg" alt="">
+                                <img src="myassets/img/masjidindah.jpg" alt="">
                                 <div class="em_text">
                                     <div class="">
                                         <h2 class="offer_txt">Islam</h2>
@@ -419,7 +122,7 @@ body {
                         </div>
                         <div class="item em_item">
                             <div class="em_cover_img">
-                                <img src="img/priasholat.jpg" alt="">
+                                <img src="myassets/img/priasholat.jpg" alt="">
                                 <div class="em_text">
                                     <div class="">
                                         <h2 class="offer_txt">Sholat</h2>
@@ -431,7 +134,7 @@ body {
                         </div>
                         <div class="item em_item">
                             <div class="em_cover_img">
-                                <img src="img/anakberdoa.jpg" alt="">
+                                <img src="myassets/img/anakberdoa.jpg" alt="">
                                 <div class="em_text">
                                     <div class="">
                                         <h2 class="offer_txt">Berdoa</h2>
@@ -443,7 +146,7 @@ body {
                         </div>
                         <div class="item em_item">
                             <div class="em_cover_img">
-                                <img src="img/memberizakat.jpg" alt="">
+                                <img src="myassets/img/memberizakat.jpg" alt="">
                                 <div class="em_text">
                                     <div class="">
                                         <h2 class="offer_txt">Zakat</h2>
@@ -455,7 +158,7 @@ body {
                         </div>
                         <div class="item em_item">
                             <div class="em_cover_img">
-                                <img src="img/orangmengaji.jpg" alt="">
+                                <img src="myassets/img/orangmengaji.jpg" alt="">
                                 <div class="em_text">
                                     <div class="">
                                         <h2 class="offer_txt">Mengaji</h2>
@@ -467,7 +170,7 @@ body {
                         </div>
                         <div class="item em_item">
                             <div class="em_cover_img">
-                                <img src="img/kabah.jpg" alt="">
+                                <img src="myassets/img/kabah.jpg" alt="">
                                 <div class="em_text">
                                     <div class="">
                                         <h2 class="offer_txt">Haji</h2>
@@ -478,7 +181,7 @@ body {
                         </div>
                         <div class="item em_item">
                             <div class="em_cover_img">
-                                <img src="img/qurban.jpg" alt="">
+                                <img src="myassets/img/qurban.jpg" alt="">
                                 <div class="em_text">
                                     <div class="">
                                         <h2 class="offer_txt">Qurban</h2>
@@ -490,7 +193,7 @@ body {
                         </div>
                         <div class="item em_item">
                             <div class="em_cover_img">
-                                <img src="img/wanitaberdoa.jpg" alt="">
+                                <img src="myassets/img/wanitaberdoa.jpg" alt="">
                                 <div class="em_text">
                                     <div class="">
                                         <h2 class="offer_txt">Sholawat</h2>
@@ -682,7 +385,7 @@ body {
                 class="emSimple_main_footer margin-t-10 border-t border-t-solid border-snow bg-white d-flex justify-content-center text-center padding-20">
                 <div class="padding-t-10 padding-b-10">
                     <a href="../quranweb/" class="brand_sm margin-b-20 d-block">
-                        <img src="img/kitaberbagi-community-logo-pjg.png" alt="">
+                        <img src="myassets/img/kitaberbagi-community-logo-pjg.png" alt="">
                     </a>
                     <h3 class="size-13 weight-400 color-secondary margin-b-10">
                         Copyright © Kita Berbagi Community 2025. All Rights Reserved.
@@ -875,9 +578,8 @@ body {
         </section>
         <!-- End. searchMenu__hdr -->
 
-        <!-- Modal Sidebar Menu (withBackground) -->
-        <div class="modal sidebarMenu -left fade" id="mdllSidebarMenu-background" tabindex="-1"
-            aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Modal Sidebar Menu dari Hadist Digital -->
+<div class="modal sidebarMenu -left fade" id="mdllSidebarMenu-background" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-scrollable">
                 <div class="modal-content">
                     <div class="modal-header d-block">
@@ -903,22 +605,13 @@ body {
                     <div class="modal-body">
                         <ul class="nav flex-column -active-links">
                             <li class="nav-item">
-                                <a class="nav-link" href="../quranweb/">
+                                <a class="nav-link" href="../../quranweb/">
                                 <div class="">
                                         <div class="icon_current">
-                                            <svg id="Iconly_Curved_Home" data-name="Iconly/Curved/Home"
-                                                xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20">
+                                            <svg id="Iconly_Curved_Home" data-name="Iconly/Curved/Home" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                                                 <g id="Home" transform="translate(2 1.667)">
-                                                    <path id="Stroke_1" data-name="Stroke 1" d="M0,.5H4.846"
-                                                        transform="translate(5.566 11.28)" fill="none" stroke="#9498ac"
-                                                        stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-miterlimit="10" stroke-width="1.5" />
-                                                    <path id="Stroke_2" data-name="Stroke 2"
-                                                        d="M0,9.761C0,5.068.512,5.4,3.266,2.842,4.471,1.872,6.346,0,7.965,0S11.5,1.862,12.712,2.842c2.754,2.554,3.265,2.227,3.265,6.919,0,6.906-1.633,6.906-7.988,6.906S0,16.667,0,9.761Z"
-                                                        transform="translate(0)" fill="none" stroke="#9498ac"
-                                                        stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-miterlimit="10" stroke-width="1.5" />
+                                                    <path id="Stroke_1" data-name="Stroke 1" d="M0,.5H4.846" transform="translate(5.566 11.28)" fill="none" stroke="#9498ac" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" />
+                                                    <path id="Stroke_2" data-name="Stroke 2" d="M0,9.761C0,5.068.512,5.4,3.266,2.842,4.471,1.872,6.346,0,7.965,0S11.5,1.862,12.712,2.842c2.754,2.554,3.265,2.227,3.265,6.919,0,6.906-1.633,6.906-7.988,6.906S0,16.667,0,9.761Z" transform="translate(0)" fill="none" stroke="#9498ac" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" />
                                                 </g>
                                             </svg>
                                         </div>
@@ -927,23 +620,47 @@ body {
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="app-homes.html">
+                                <a class="nav-link" href="https://kitaberbagi.com/forum/">
+                                    <div class="">
+                                        <div class="icon_current">
+                                            <svg id="Iconly_Curved_Document" data-name="Iconly/Curved/Document" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                                <g id="Document" transform="translate(3.008 2.292)">
+                                                    <path id="Stroke_1" data-name="Stroke 1" d="M6.017.5H0" transform="translate(3.971 10.289)" fill="none" stroke="#9498ac" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" />
+                                                    <path id="Stroke_2" data-name="Stroke 2" d="M6.017.5H0" transform="translate(3.971 7.155)" fill="none" stroke="#9498ac" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" />
+                                                    <path id="Stroke_3" data-name="Stroke 3" d="M2.3.5H0" transform="translate(3.972 4.023)" fill="none" stroke="#9498ac" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" />
+                                                    <path id="Stroke_4" data-name="Stroke 4" d="M0,7.708c0,5.781,1.748,7.708,6.992,7.708s6.992-1.927,6.992-7.708S12.238,0,6.992,0,0,1.927,0,7.708Z" transform="translate(0)" fill="none" stroke="#9498ac" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                        <span class="title_link">Community</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="quran/">
+                                    <div class="">
+                                        <div class="icon_current">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="20" height="20">
+                                                <rect x="8" y="10" width="48" height="44" rx="4" ry="4" fill="none" stroke="#9498ac" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <rect x="12" y="14" width="40" height="36" rx="2" ry="2" fill="none" stroke="#9498ac" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <line x1="32" y1="14" x2="32" y2="50" stroke="#9498ac" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <polygon points="32,26 36,30 32,34 28,30" fill="none" stroke="#9498ac" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <circle cx="32" cy="30" r="2" fill="none" stroke="#9498ac" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <rect x="8" y="50" width="48" height="4" fill="none" stroke="#9498ac" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                        <span class="title_link">Al - Quran</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
                                 <div class="">
                                         <div class="icon_current">
-                                            <svg id="Iconly_Curved_Discovery" data-name="Iconly/Curved/Discovery"
-                                                xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20">
+                                            <svg id="Iconly_Curved_Discovery" data-name="Iconly/Curved/Discovery" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                                                 <g id="Discovery" transform="translate(2.292 2.292)">
-                                                    <path id="Stroke_1" data-name="Stroke 1"
-                                                        d="M0,7.708c0,5.781,1.927,7.708,7.708,7.708s7.708-1.927,7.708-7.708S13.489,0,7.708,0,0,1.927,0,7.708Z"
-                                                        transform="translate(0 0)" fill="none" stroke="#9498ac"
-                                                        stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-miterlimit="10" stroke-width="1.5" />
-                                                    <path id="Stroke_3" data-name="Stroke 3"
-                                                        d="M0,5.5,1.312,1.312,5.5,0,4.192,4.191Z"
-                                                        transform="translate(4.957 4.957)" fill="none" stroke="#9498ac"
-                                                        stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-miterlimit="10" stroke-width="1.5" />
+                                                    <path id="Stroke_1" data-name="Stroke 1" d="M0,7.708c0,5.781,1.927,7.708,7.708,7.708s7.708-1.927,7.708-7.708S13.489,0,7.708,0,0,1.927,0,7.708Z" transform="translate(0 0)" fill="none" stroke="#9498ac" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" />
+                                                    <path id="Stroke_3" data-name="Stroke 3" d="M0,5.5,1.312,1.312,5.5,0,4.192,4.191Z" transform="translate(4.957 4.957)" fill="none" stroke="#9498ac" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" />
                                                 </g>
                                             </svg>
                                         </div>
@@ -951,90 +668,15 @@ body {
                                     </div>
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="app-components.html">
-                                    <div class="">
-                                        <div class="icon_current">
-                                            <svg id="Iconly_Curved_More_Circle" data-name="Iconly/Curved/More Circle"
-                                                xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20">
-                                                <g id="More_Circle" data-name="More Circle"
-                                                    transform="translate(2.292 2.292)">
-                                                    <path id="Stroke_4" data-name="Stroke 4"
-                                                        d="M0,7.708C0,1.927,1.927,0,7.708,0s7.708,1.927,7.708,7.708-1.927,7.708-7.708,7.708S0,13.489,0,7.708Z"
-                                                        transform="translate(0 0)" fill="none" stroke="#556fff"
-                                                        stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-miterlimit="10" stroke-width="1.5" />
-                                                    <path id="Stroke_11" data-name="Stroke 11" d="M.5.5H.5"
-                                                        transform="translate(9.883 8.792)" fill="none" stroke="#556fff"
-                                                        stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-miterlimit="10" stroke-width="2" />
-                                                    <path id="Stroke_13" data-name="Stroke 13" d="M.5.5H.5"
-                                                        transform="translate(7.383 5.458)" fill="none" stroke="#556fff"
-                                                        stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-miterlimit="10" stroke-width="2" />
-                                                    <path id="Stroke_15" data-name="Stroke 15" d="M.5.5H.5"
-                                                        transform="translate(4.876 8.792)" fill="none" stroke="#556fff"
-                                                        stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-miterlimit="10" stroke-width="2" />
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <span class="title_link">Components</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="app-pages.html">
-                                    <div class="">
-                                        <div class="icon_current">
-                                            <svg id="Iconly_Curved_Document" data-name="Iconly/Curved/Document"
-                                                xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20">
-                                                <g id="Document" transform="translate(3.008 2.292)">
-                                                    <path id="Stroke_1" data-name="Stroke 1" d="M6.017.5H0"
-                                                        transform="translate(3.971 10.289)" fill="none" stroke="#9498ac"
-                                                        stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-miterlimit="10" stroke-width="1.5" />
-                                                    <path id="Stroke_2" data-name="Stroke 2" d="M6.017.5H0"
-                                                        transform="translate(3.971 7.155)" fill="none" stroke="#9498ac"
-                                                        stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-miterlimit="10" stroke-width="1.5" />
-                                                    <path id="Stroke_3" data-name="Stroke 3" d="M2.3.5H0"
-                                                        transform="translate(3.972 4.023)" fill="none" stroke="#9498ac"
-                                                        stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-miterlimit="10" stroke-width="1.5" />
-                                                    <path id="Stroke_4" data-name="Stroke 4"
-                                                        d="M0,7.708c0,5.781,1.748,7.708,6.992,7.708s6.992-1.927,6.992-7.708S12.238,0,6.992,0,0,1.927,0,7.708Z"
-                                                        transform="translate(0)" fill="none" stroke="#9498ac"
-                                                        stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-miterlimit="10" stroke-width="1.5" />
-                                                </g>
-                                            </svg>
-                                        </div>
-                                        <span class="title_link">Pages</span>
-                                    </div>
-                                </a>
-                            </li>
                             <label class="title__label">other</label>
                             <li class="nav-item">
-                                <a class="nav-link" href="page-profile.html">
+                                <a class="nav-link" href="setting/">
                                     <div class="">
                                         <div class="icon_current">
-                                            <svg id="Iconly_Curved_Setting" data-name="Iconly/Curved/Setting"
-                                                xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20">
+                                            <svg id="Iconly_Curved_Setting" data-name="Iconly/Curved/Setting" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                                                 <g id="Setting" transform="translate(2.917 2.083)">
-                                                    <path id="Stroke_1" data-name="Stroke 1"
-                                                        d="M2.083,0A2.083,2.083,0,1,1,0,2.083,2.083,2.083,0,0,1,2.083,0Z"
-                                                        transform="translate(5 5.833)" fill="none" stroke="#9498ac"
-                                                        stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-miterlimit="10" stroke-width="1.5" />
-                                                    <path id="Stroke_3" data-name="Stroke 3"
-                                                        d="M13.89,3.959h0a2.053,2.053,0,0,0-2.816-.76A1.286,1.286,0,0,1,9.145,2.077,2.07,2.07,0,0,0,7.083,0h0A2.07,2.07,0,0,0,5.021,2.077,1.286,1.286,0,0,1,3.093,3.2a2.054,2.054,0,0,0-2.817.76A2.085,2.085,0,0,0,1.031,6.8a1.3,1.3,0,0,1,0,2.243,2.085,2.085,0,0,0-.755,2.837,2.054,2.054,0,0,0,2.816.761h0a1.285,1.285,0,0,1,1.928,1.121h0a2.07,2.07,0,0,0,2.062,2.077h0a2.07,2.07,0,0,0,2.062-2.077h0a1.286,1.286,0,0,1,1.929-1.121,2.054,2.054,0,0,0,2.816-.761,2.085,2.085,0,0,0-.754-2.837h0a1.3,1.3,0,0,1,0-2.243A2.085,2.085,0,0,0,13.89,3.959Z"
-                                                        transform="translate(0)" fill="none" stroke="#9498ac"
-                                                        stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-miterlimit="10" stroke-width="1.5" />
+                                                    <path id="Stroke_1" data-name="Stroke 1" d="M2.083,0A2.083,2.083,0,1,1,0,2.083,2.083,2.083,0,0,1,2.083,0Z" transform="translate(5 5.833)" fill="none" stroke="#9498ac" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" />
+                                                    <path id="Stroke_3" data-name="Stroke 3" d="M13.89,3.959h0a2.053,2.053,0,0,0-2.816-.76A1.286,1.286,0,0,1,9.145,2.077,2.07,2.07,0,0,0,7.083,0h0A2.07,2.07,0,0,0,5.021,2.077,1.286,1.286,0,0,1,3.093,3.2a2.054,2.054,0,0,0-2.817.76A2.085,2.085,0,0,0,1.031,6.8a1.3,1.3,0,0,1,0,2.243,2.085,2.085,0,0,0-.755,2.837,2.054,2.054,0,0,0,2.816.761h0a1.285,1.285,0,0,1,1.928,1.121h0a2.07,2.07,0,0,0,2.062,2.077h0a2.07,2.07,0,0,0,2.062-2.077h0a1.286,1.286,0,0,1,1.929-1.121,2.054,2.054,0,0,0,2.816-.761,2.085,2.085,0,0,0-.754-2.837h0a1.3,1.3,0,0,1,0-2.243A2.085,2.085,0,0,0,13.89,3.959Z" transform="translate(0)" fill="none" stroke="#9498ac" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" />
                                                 </g>
                                             </svg>
                                         </div>
@@ -1046,23 +688,13 @@ body {
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="page-support.html">
+                                <a class="nav-link" href="https://easydigital.co.id/">
                                     <div class="">
                                         <div class="icon_current">
-                                            <svg id="Iconly_Curved_Message" data-name="Iconly/Curved/Message"
-                                                xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20">
+                                            <svg id="Iconly_Curved_Message" data-name="Iconly/Curved/Message" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                                                 <g id="Message" transform="translate(2.043 2.377)">
-                                                    <path id="Stroke_1" data-name="Stroke 1"
-                                                        d="M9.292,0S6.617,3.211,4.661,3.211,0,0,0,0"
-                                                        transform="translate(3.285 5.139)" fill="none" stroke="#9498ac"
-                                                        stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-miterlimit="10" stroke-width="1.5" />
-                                                    <path id="Stroke_3" data-name="Stroke 3"
-                                                        d="M0,7.6C0,1.9,1.984,0,7.937,0s7.937,1.9,7.937,7.6-1.984,7.6-7.937,7.6S0,13.295,0,7.6Z"
-                                                        transform="translate(0 0)" fill="none" stroke="#9498ac"
-                                                        stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-miterlimit="10" stroke-width="1.5" />
+                                                    <path id="Stroke_1" data-name="Stroke 1" d="M9.292,0S6.617,3.211,4.661,3.211,0,0,0,0" transform="translate(3.285 5.139)" fill="none" stroke="#9498ac" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" />
+                                                    <path id="Stroke_3" data-name="Stroke 3" d="M0,7.6C0,1.9,1.984,0,7.937,0s7.937,1.9,7.937,7.6-1.984,7.6-7.937,7.6S0,13.295,0,7.6Z" transform="translate(0 0)" fill="none" stroke="#9498ac" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" />
                                                 </g>
                                             </svg>
                                         </div>
@@ -1072,26 +704,13 @@ body {
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="page-about.html">
-                                    <div class="">
+                                    <div class="#">
                                         <div class="icon_current">
-                                            <svg id="Iconly_Curved_Info_Square" data-name="Iconly/Curved/Info Square"
-                                                xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20">
-                                                <g id="Info_Square" data-name="Info Square"
-                                                    transform="translate(2.292 2.292)">
-                                                    <path id="Stroke_1" data-name="Stroke 1"
-                                                        d="M0,7.708C0,1.927,1.927,0,7.708,0s7.708,1.927,7.708,7.708-1.927,7.708-7.708,7.708S0,13.489,0,7.708Z"
-                                                        transform="translate(15.417 15.417) rotate(180)" fill="none"
-                                                        stroke="#9498ac" stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-miterlimit="10" stroke-width="1.5" />
-                                                    <path id="Stroke_3" data-name="Stroke 3" d="M0,0V3.246"
-                                                        transform="translate(7.708 10.954) rotate(180)" fill="none"
-                                                        stroke="#9498ac" stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-miterlimit="10" stroke-width="1.5" />
-                                                    <path id="Stroke_15" data-name="Stroke 15" d="M0,0H.007"
-                                                        transform="translate(7.712 4.792) rotate(180)" fill="none"
-                                                        stroke="#9498ac" stroke-linecap="round" stroke-linejoin="round"
-                                                        stroke-miterlimit="10" stroke-width="1.5" />
+                                            <svg id="Iconly_Curved_Info_Square" data-name="Iconly/Curved/Info Square" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                                <g id="Info_Square" data-name="Info Square" transform="translate(2.292 2.292)">
+                                                    <path id="Stroke_1" data-name="Stroke 1" d="M0,7.708C0,1.927,1.927,0,7.708,0s7.708,1.927,7.708,7.708-1.927,7.708-7.708,7.708S0,13.489,0,7.708Z" transform="translate(15.417 15.417) rotate(180)" fill="none" stroke="#9498ac" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" />
+                                                    <path id="Stroke_3" data-name="Stroke 3" d="M0,0V3.246" transform="translate(7.708 10.954) rotate(180)" fill="none" stroke="#9498ac" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" />
+                                                    <path id="Stroke_15" data-name="Stroke 15" d="M0,0H.007" transform="translate(7.712 4.792) rotate(180)" fill="none" stroke="#9498ac" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" />
                                                 </g>
                                             </svg>
                                         </div>
@@ -1116,6 +735,7 @@ body {
                 </div>
             </div>
         </div>
+    </div>
 
         <!-- Modal mdllOthers -->
         <div class="modal transition-bottom screenFull defaultModal mdlladd__rate mdllOptios_grid fade" id="mdllOthers"
@@ -1167,21 +787,21 @@ body {
                                     </div>
                                     <span class="d-block mt-1 size-14 weight-600 color-secondary text-center">Kalender</span>
                                 </a>
-                                <a href="kiblat/" class="btn p-1 m-1 transform-scale-hover flex-shrink-0 text-center">
+                                <a href="#" class="btn p-1 m-1 transform-scale-hover flex-shrink-0 text-center">
                                     <div class="icon bg-turquoise bg-opacity-20 rounded-circle shadow-sm d-flex justify-content-center align-items-center"
                                         style="width: 40px; height: 40px;">
                                         <i class="fas fa-compass" style="font-size: 20px; color: #c8fcec;"></i>
                                     </div>
                                     <span class="d-block mt-1 size-14 weight-600 color-secondary text-center">Kiblat</span>
                                 </a>
-                                <a href="motivasi/" class="btn p-1 m-1 transform-scale-hover flex-shrink-0 text-center">
+                                <a href="#" class="btn p-1 m-1 transform-scale-hover flex-shrink-0 text-center">
                                     <div class="icon bg-purple bg-opacity-20 rounded-circle shadow-sm d-flex justify-content-center align-items-center"
                                         style="width: 40px; height: 40px;">
                                         <i class="fas fa-quote-left" style="font-size: 20px; color: #f1edff;"></i>
                                     </div>
                                     <span class="d-block mt-1 size-14 weight-600 color-secondary text-center">Motivasi</span>
                                 </a>
-                                <a href="kalkulatorzakat/" class="btn p-1 m-1 transform-scale-hover flex-shrink-0 text-center">
+                                <a href="#" class="btn p-1 m-1 transform-scale-hover flex-shrink-0 text-center">
                                     <div class="icon bg-orange bg-opacity-20 rounded-circle shadow-sm d-flex justify-content-center align-items-center"
                                         style="width: 40px; height: 40px;">
                                         <i class="fas fa-calculator" style="font-size: 20px; color: #fd7e14;"></i>
@@ -1217,137 +837,7 @@ body {
     <!-- PWA app service registration and works js -->
     <script src="assets/js/pwa-services.js"></script>
 
-    <script>
-        // Detect device color scheme and set the dark mode switch accordingly
-        function setDarkModeSwitch() {
-            const darkModeSwitch = document.getElementById('switchDarkMode');
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                darkModeSwitch.checked = true;
-            } else {
-                darkModeSwitch.checked = false;
-            }
-        }
-
-        // Apply the setting on page load
-        setDarkModeSwitch();
-
-        // Listen for changes in the device's color scheme
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', setDarkModeSwitch);
-
-        // Owl Carousel initialization
-        $(document).ready(function () {
-            $('.motivational_slider .owl-carousel').owlCarousel({
-                loop: true,
-                margin: 10,
-                autoplay: true,
-                autoplayTimeout: 3000,
-                autoplayHoverPause: true,
-                responsive: {
-                    0: { items: 1 },
-                    600: { items: 2 },
-                    1000: { items: 3 }
-                }
-            });
-        });
-
-        // Swiper initialization for YouTube Video Carousel
-        var swiper = new Swiper('.mySwiper', {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            loop: true,
-            autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 30,
-                },
-            },
-        });
-
-        // Owl Carousel Initialization
-$(document).ready(function () {
-    $('.motivational_slider .owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        responsive: {
-            0: { items: 1 },
-            600: { items: 2 },
-            1000: { items: 3 }
-        }
-    });
-});
-
-// Swiper Initialization for YouTube Video Carousel
-var swiper = new Swiper('.mySwiper', {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    loop: true,
-    autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    breakpoints: {
-        640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
-        1024: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-        },
-    },
-});
-
-// Dark Mode Functionality
-document.addEventListener('DOMContentLoaded', () => {
-    const darkModeSwitch = document.getElementById('switchDarkMode');
-    const body = document.body;
-
-    const applyDarkMode = (isDark) => {
-        if (isDark) {
-            body.classList.add('darkMode-active');
-            if (darkModeSwitch) darkModeSwitch.checked = true;
-        } else {
-            body.classList.remove('darkMode-active');
-            if (darkModeSwitch) darkModeSwitch.checked = false;
-        }
-    };
-
-    const savedDarkMode = localStorage.getItem('darkMode');
-    if (savedDarkMode) {
-        applyDarkMode(savedDarkMode === 'enabled');
-    } else {
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        applyDarkMode(prefersDark);
-    }
-
-    if (darkModeSwitch) {
-        darkModeSwitch.addEventListener('change', () => {
-            const isDark = darkModeSwitch.checked;
-            applyDarkMode(isDark);
-            localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
-        });
-    }
-});
-    </script>
+    <script src="myasset/js/homepages.js"></script>
 </body>
 
 </html>
