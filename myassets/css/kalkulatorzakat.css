@@ -1,0 +1,243 @@
+/* CSS Variables from Doa Digital */
+:root {
+    --color-black: #000;
+    --color-white: #fff;
+    --color-primary: #556fff;
+    --color-secondary: #0e132d;
+    --color-snow: #cbcdd8;
+    --color-red: #ff4040;
+    --color-orange: #ff702c;
+    --color-blue: #4a8cfd;
+    --color-yellow: #fa9905;
+    --color-green: #41bd83;
+    --color-text: #9498ac;
+    --color-comment: #5d6072;
+    --bg-black: #000;
+    --bg-white: #fff;
+    --bg-primary: #556fff;
+    --bg-secondary: #0e132d;
+    --bg-snow: #f7f7f8;
+    --bg-red: #ff4040;
+    --bg-orange: #ff702c;
+    --bg-blue: #53a7f9;
+    --bg-yellow: #fa9905;
+    --bg-green: #41bd83;
+    --border-black: #000;
+    --border-white: #fff;
+    --border-primary: #556fff;
+    --border-secondary: #0e132d;
+    --border-snow: #efeff6;
+    --border-red: #ff4040;
+    --border-orange: #ff702c;
+    --border-blue: #4a8cfd;
+    --border-yellow: #fa9905;
+    --border-green: #41bd83;
+    --border-input: #efeff6;
+}
+
+body.darkMode-active {
+    --color-black: #fff;
+    --color-white: #fff;
+    --color-primary: #556fff;
+    --color-secondary: #cbcdd8;
+    --color-snow: #52566e;
+    --color-red: #ff4040;
+    --color-orange: #ff702c;
+    --color-blue: #4a8cfd;
+    --color-yellow: #fa9905;
+    --color-green: #41bd83;
+    --color-text: #9498ac;
+    --color-comment: #5d6072;
+    --bg-black: #fff;
+    --bg-white: #0e132d;
+    --bg-primary: #556fff;
+    --bg-secondary: #9498ac;
+    --bg-snow: #0a0f27;
+    --bg-red: #ff4040;
+    --bg-orange: #ff702c;
+    --bg-blue: #53a7f9;
+    --bg-yellow: #fa9905;
+    --bg-green: #41bd83;
+    --border-black: #000;
+    --border-white: #0e132d;
+    --border-primary: #556fff;
+    --border-secondary: #0e132d;
+    --border-snow: #242a48;
+    --border-red: #ff4040;
+    --border-orange: #ff702c;
+    --border-blue: #4a8cfd;
+    --border-yellow: #fa9905;
+    --border-green: #41bd83;
+    --border-input: #303756;
+}
+
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, var(--bg-snow), var(--bg-white));
+    color: var(--color-secondary);
+    font-family: "CircularStd", sans-serif;
+    transition: background 0.5s ease, color 0.3s ease;
+    animation: gradientBG 15s ease infinite;
+}
+@keyframes gradientBG {
+    0% { background: linear-gradient(45deg, var(--bg-snow), var(--bg-white)); }
+    25% { background: linear-gradient(45deg, var(--bg-white), var(--bg-snow)); }
+    50% { background: linear-gradient(45deg, var(--bg-snow), var(--bg-white)); }
+    75% { background: linear-gradient(45deg, var(--bg-white), var(--bg-snow)); }
+    100% { background: linear-gradient(45deg, var(--bg-snow), var(--bg-white)); }
+}
+
+/* Membuat header sticky */
+.main_haeder {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--bg-white);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+}
+
+/* Card Styles */
+.card {
+    border-radius: 15px;
+    background: var(--bg-white);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    border: none;
+}
+.card-header {
+    border-radius: 15px 15px 0 0;
+    background: linear-gradient(45deg, var(--bg-green), var(--bg-blue));
+    color: var(--color-white);
+}
+.card-footer {
+    background: linear-gradient(45deg, var(--bg-green), var(--bg-blue));
+    color: var(--color-white);
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+    padding: 10px;
+}
+
+/* Kalkulator Zakat Styles dengan perbaikan tata letak */
+.kalkulator-zakat {
+    padding: 25px;
+}
+.kalkulator-zakat h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--color-secondary);
+    text-align: center;
+}
+.kalkulator-zakat h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: var(--color-secondary);
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--border-green);
+}
+.kalkulator-zakat p {
+    font-size: 0.95rem;
+    color: var(--color-text);
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.hitung-nishab, .zakat-penghasilan {
+    margin-bottom: 30px;
+    background: var(--bg-snow);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.input-group {
+    margin-bottom: 20px;
+}
+.input-group label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--color-secondary);
+    display: block;
+}
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-input);
+    border-radius: 5px;
+    background: var(--bg-white);
+    color: var(--color-secondary);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.input-group input:focus {
+    border-color: var(--border-orange);
+    box-shadow: 0 0 5px rgba(255, 112, 44, 0.5);
+    outline: none;
+}
+.gold-price-link {
+    font-size: 0.9rem;
+    color: var(--color-blue);
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    display: block;
+    margin-top: 8px;
+}
+.gold-price-link:hover {
+    color: var(--color-orange);
+}
+.btn-primary {
+    background: var(--bg-green);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+.btn-primary:hover {
+    background: var(--bg-blue);
+}
+.result {
+    margin-top: 25px;
+    padding: 15px;
+    background: var(--bg-snow);
+    border-radius: 10px;
+    display: none;
+}
+.result.show {
+    display: block;
+}
+.result p {
+    font-size: 1.1rem;
+    color: var(--color-orange);
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.obligation {
+    margin-top: 20px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    display: none;
+}
+.obligation.show {
+    display: block;
+}
+.obligation span {
+    color: var(--color-red);
+}
+.obligation span.obligated {
+    color: var(--color-green);
+}
+
+/* Sticky Footer Navigation */
+.em_main_footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: var(--bg-white);
+    z-index: 1000;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}

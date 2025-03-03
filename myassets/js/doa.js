@@ -246,27 +246,27 @@ var app = new Vue({
     }
 });
 
-        // Dark Mode Persistence
-        document.addEventListener('DOMContentLoaded', () => {
-            const darkModeSwitch = document.getElementById('switchDarkMode');
-            const body = document.body;
+// Dark Mode Persistence
+document.addEventListener('DOMContentLoaded', () => {
+    const darkModeSwitch = document.getElementById('switchDarkMode');
+    const body = document.body;
 
-            // Load dark mode state from localStorage
-            if (localStorage.getItem('darkMode') === 'enabled') {
+    // Load dark mode state from localStorage
+    if (localStorage.getItem('darkMode') === 'enabled') {
+        body.classList.add('darkMode-active');
+        if (darkModeSwitch) darkModeSwitch.checked = true;
+    }
+
+    // Toggle dark mode
+    if (darkModeSwitch) {
+        darkModeSwitch.addEventListener('change', () => {
+            if (darkModeSwitch.checked) {
                 body.classList.add('darkMode-active');
-                if (darkModeSwitch) darkModeSwitch.checked = true;
-            }
-
-            // Toggle dark mode
-            if (darkModeSwitch) {
-                darkModeSwitch.addEventListener('change', () => {
-                    if (darkModeSwitch.checked) {
-                        body.classList.add('darkMode-active');
-                        localStorage.setItem('darkMode', 'enabled');
-                    } else {
-                        body.classList.remove('darkMode-active');
-                        localStorage.setItem('darkMode', 'disabled');
-                    }
-                });
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('darkMode-active');
+                localStorage.setItem('darkMode', 'disabled');
             }
         });
+    }
+});

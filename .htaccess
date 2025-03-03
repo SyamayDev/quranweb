@@ -2,4 +2,4 @@ RewriteEngine On
 RewriteBase /quranweb/
 
 # Arahkan folder agar bisa diakses tanpa index.php
-RewriteRule ^(doa|hadist|kalender|jadwalsholatdanimsakiah|quran|setting)/?$ $1/index.php [L]
+RewriteRule ^(doa|hadist|kalender|jadwalsholatdanimsakiah|quran|kalkulatorzakat|setting)/?$ $1/index.php [L]

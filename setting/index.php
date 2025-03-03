@@ -205,7 +205,7 @@
                                 <h3>Tentang Aplikasi</h3>
                                 <p>Aplikasi Islami untuk membantu umat dalam ibadah sehari-hari, termasuk jadwal sholat, Al-Qur'an, hadist, doa, dan kalkulator zakat.</p>
                                 <p>Version: 1.0.0</p>
-                                <p>Developed by: [Nama Pengembang]</p>
+                                <p>Developed by: Syahril May Mubdi</p>
                             </div>
                         </div>
                     </div>

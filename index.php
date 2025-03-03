@@ -801,7 +801,7 @@
                                     </div>
                                     <span class="d-block mt-1 size-14 weight-600 color-secondary text-center">Motivasi</span>
                                 </a>
-                                <a href="#" class="btn p-1 m-1 transform-scale-hover flex-shrink-0 text-center">
+                                <a href="kalkulatorzakat/" class="btn p-1 m-1 transform-scale-hover flex-shrink-0 text-center">
                                     <div class="icon bg-orange bg-opacity-20 rounded-circle shadow-sm d-flex justify-content-center align-items-center"
                                         style="width: 40px; height: 40px;">
                                         <i class="fas fa-calculator" style="font-size: 20px; color: #fd7e14;"></i>
@@ -838,6 +838,90 @@
     <script src="assets/js/pwa-services.js"></script>
 
     <script src="myasset/js/homepages.js"></script>
+    <script>
+// Owl Carousel initialization
+$(document).ready(function () {
+    $('.motivational_slider .owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: { items: 1 },
+            600: { items: 2 },
+            1000: { items: 3 }
+        }
+    });
+});
+
+// Swiper initialization for YouTube Video Carousel
+var swiper = new Swiper('.mySwiper', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    },
+});
+
+// Owl Carousel Initialization
+$(document).ready(function () {
+$('.motivational_slider .owl-carousel').owlCarousel({
+loop: true,
+margin: 10,
+autoplay: true,
+autoplayTimeout: 3000,
+autoplayHoverPause: true,
+responsive: {
+    0: { items: 1 },
+    600: { items: 2 },
+    1000: { items: 3 }
+}
+});
+});
+
+// Swiper Initialization for YouTube Video Carousel
+var swiper = new Swiper('.mySwiper', {
+slidesPerView: 1,
+spaceBetween: 10,
+loop: true,
+autoplay: {
+delay: 4000,
+disableOnInteraction: false,
+},
+pagination: {
+el: '.swiper-pagination',
+clickable: true,
+},
+breakpoints: {
+640: {
+    slidesPerView: 2,
+    spaceBetween: 20,
+},
+1024: {
+    slidesPerView: 3,
+    spaceBetween: 30,
+},
+},
+});
+
+    </script>
 </body>
 
 </html>
